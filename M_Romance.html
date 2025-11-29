@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Romance Movies - Movie Reviews</title>
+</head>
+
+<body class="movie-page-body">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark site-header">
+        <div class="container-fluid">
+
+            <a class="navbar-brand logo" href="index.html">
+                <img src="img/LOGO/SPU.png" alt="LOGO" class="mark">
+                <div><strong>MOVIEREVIEWS</strong>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarMenu"
+                aria-controls="mainNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="mainNavbarMenu" class="collapse navbar-collapse">
+                <form class="d-flex me-3 search-form" role="search">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="ค้นหาหนัง..." aria-label="Search"
+                            id="searchInput">
+                        <button class="btn btn-outline-warning" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="movieDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TOP 10 MOVIE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="movieDropdown">
+                            <li><a class="dropdown-item" href="M_Action.html">Action</a></li>
+                            <li><a class="dropdown-item" href="M_Comedy.html">Comedy</a></li>
+                            <li><a class="dropdown-item" href="M_Drama.html">Drama</a></li>
+                            <li><a class="dropdown-item" href="M_Horror.html">Horror</a></li>
+                            <li><a class="dropdown-item active" href="M_Romance.html" aria-current="page">Romance</a>
+                            </li>
+                            <li><a class="dropdown-item" href="M_Fantasy.html">Fantasy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="movieDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TOP 10 TV SHOW
+                        </a>
+                        <ul class="dropdown-menu " aria-labelledby="movieDropdown">
+                            <li><a class="dropdown-item" href="TV_Action.html">Action</a></li>
+                            <li><a class="dropdown-item" href="TV_Comedy.html">Comedy</a></li>
+                            <li><a class="dropdown-item" href="TV_Drama.html">Drama</a></li>
+                            <li><a class="dropdown-item" href="TV_Horror.html">Horror</a></li>
+                            <li><a class="dropdown-item" href="TV_Romance.html">Romance</a></li>
+                            <li><a class="dropdown-item" href="TV_Fantasy.html">Fantasy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Oscar.html" class="nav-link">OSCAR WINNERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Aboutus.html" class="nav-link">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="movie-page">
+        <div class="background-layer">
+            <img src="img/background/past_lives_bg.jpg" alt="Background Movie Cover" id="hero-background-image"
+                class="hero-bg-image">
+        </div>
+
+        <div class="container-fluid main-content-wrapper-custom">
+            <div class="row align-items-end">
+
+                <div class="col-lg-10 col-md-12">
+                    <section class="hero-banner-info" id="hero-banner-info">
+
+                        <div class="movie-logo">
+                            <h1 class="movie-title">THE NOTEBOOK</h1>
+                        </div>
+                        <div class="movie-metadata">
+                            <span class="year">2004</span>
+                            <span class="runtime">2h 3min</span>
+                            <span class="genre">Romance, Drama</span>
+                        </div>
+                        <p class="synopsis-hero">
+                            เรื่องราวความรักอมตะของ Noah และ Allie สองคนรักที่ต้องแยกกันเพราะความแตกต่างในชนชั้น
+                            แต่ความรักของพวกเขายังคงอยู่ตลอดหลายทศวรรษ...
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn btn-warning btn-lg me-2" id="openTrailerModal">
+                                <span class="icon">▶</span> WATCH TRAILER
+                            </button>
+                            <button class="btn btn-outline-light btn-lg" id="openMoreInfoModal">
+                                MORE INFO
+                            </button>
+                        </div>
+                        <div class="score">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1920px-IMDB_Logo_2016.svg.png"
+                                alt="">
+                            <span class="score-value" id="imdb-score">8.8</span>
+                            <img src="https://variety.com/wp-content/uploads/2017/08/rotten-tomatoes-logo1.jpg?w=1000&h=563&crop=1"
+                                alt="">
+                            <span class="score-value" id="rotten-tomatoes-score">8.8</span>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="movie-carousel-section" id="movieCarouselSection">
+            <h2 class="carousel-title">Romance</h2>
+            <div class="movie-carousel-wrapper">
+                <button class="carousel-arrow left-arrow" id="carouselLeftArrow">◀</button>
+                <div class="movie-carousel" id="movieCarousel">
+                    <div class="carousel-inner" id="carouselInner">
+                        <!-- Movie cards will be generated automatically from movieData -->
+                    </div>
+                </div>
+                <button class="carousel-arrow right-arrow" id="carouselRightArrow">▶</button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- More Info Modal -->
+    <div class="modal fade" id="moreInfoModal" tabindex="-1" aria-labelledby="moreInfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: #1a1a1a; color: #fff;">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="moreInfoModalLabel">Movie Information</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <img id="moreInfoPoster" src="" alt="Movie Poster" class="img-fluid rounded"
+                            style="max-width: 300px; max-height: 450px; object-fit: cover;">
+                    </div>
+                    <div class="movie-info-content">
+                        <h3 id="moreInfoTitle" class="text-center mb-4 modal-title-custom"></h3>
+                        <div class="mb-4">
+                            <p class="mb-1"><strong>ปีที่ฉาย:</strong> <span id="moreInfoYear"></span></p>
+                            <p class="mb-1"><strong>ประเภท:</strong> <span id="moreInfoGenre"></span></p>
+                            <p class="mb-1"><strong>ความยาว:</strong> <span id="moreInfoRuntime"></span></p>
+                            <p class="mb-1"><strong>ผู้กำกับ:</strong> <span id="moreInfoDirector"></span></p>
+                            <p class="mb-1"><strong>นักแสดงนำ:</strong> <span id="moreInfoCast"></span></p>
+                        </div>
+                        <div>
+                            <h5 class="mb-3 modal-subtitle-custom">เรื่องย่อ</h5>
+                            <p id="moreInfoSynopsis" class="text-light" style="line-height: 1.6;"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- trailer -->
+    <div class="modal fade" id="trailerModal" tabindex="-1" aria-labelledby="trailerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content" style="background-color: #000;">
+
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/e6Y1_D4iE0E" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Person Detail Modal -->
+    <div class="modal fade" id="personModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="personModalTitle"></h5>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="person-movies-container" id="personMoviesContainer">
+                        <!-- Movies will be dynamically inserted here -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" id="backToMovieModal">ย้อนกลับ</button>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        const movieCarousel = document.getElementById('movieCarousel');
+        const carouselInner = movieCarousel.querySelector('.carousel-inner');
+        // ใช้ function เพื่อ query movieCards ใหม่ทุกครั้ง (เพื่อให้ได้ cards ล่าสุด)
+        function getMovieCards() {
+            return movieCarousel.querySelectorAll('.movie-card');
+        }
+        let movieCards = getMovieCards();
+        console.log('Total movie cards found:', movieCards.length); // Debug: ตรวจสอบจำนวน cards
+        const heroBackgroundImage = document.getElementById('hero-background-image');
+        const movieTitle = document.querySelector('.movie-title');
+        const movieMetadata = document.querySelector('.movie-metadata');
+        const synopsisHero = document.querySelector('.synopsis-hero');
+        const trailerIframe = document.querySelector('#trailerModal iframe');
+        const carouselLeftArrow = document.getElementById('carouselLeftArrow');
+        const carouselRightArrow = document.getElementById('carouselRightArrow');
+
+        let currentMovieIndex = 0;
+        let isProgrammaticScroll = false; // Flag to prevent scroll handler from interfering
+
+        const trailerModalElement = document.getElementById('trailerModal');
+        const trailerModal = new bootstrap.Modal(trailerModalElement);
+        const openModalBtn = document.getElementById('openTrailerModal');
+
+        const moreInfoModalElement = document.getElementById('moreInfoModal');
+        const moreInfoModal = new bootstrap.Modal(moreInfoModalElement);
+        const openMoreInfoBtn = document.getElementById('openMoreInfoModal');
+
+        function updateMoreInfoModal(movie) {
+            document.getElementById('moreInfoPoster').src = movie.poster;
+            document.getElementById('moreInfoTitle').textContent = movie.title;
+            document.getElementById('moreInfoYear').textContent = movie.year;
+            document.getElementById('moreInfoGenre').textContent = movie.genre;
+            document.getElementById('moreInfoRuntime').textContent = movie.runtime;
+
+            // Update director with clickable name
+            const directorElement = document.getElementById('moreInfoDirector');
+            if (movie.director && movie.director !== 'ไม่ระบุ') {
+                directorElement.innerHTML = `<span class="clickable-name" data-person-type="director" data-person-name="${movie.director}">${movie.director}</span>`;
+            } else {
+                directorElement.textContent = movie.director || 'ไม่ระบุ';
+            }
+
+            // Update cast with clickable names
+            const castElement = document.getElementById('moreInfoCast');
+            if (movie.cast && movie.cast !== 'ไม่ระบุ') {
+                const castNames = movie.cast.split(',').map(name => name.trim());
+                castElement.innerHTML = castNames.map(name =>
+                    `<span class="clickable-name" data-person-type="actor" data-person-name="${name}">${name}</span>`
+                ).join(', ');
+            } else {
+                castElement.textContent = movie.cast || 'ไม่ระบุ';
+            }
+
+            document.getElementById('moreInfoSynopsis').textContent = movie.synopsis;
+        }
+
+        if (openMoreInfoBtn) {
+            openMoreInfoBtn.addEventListener('click', () => {
+                const currentMovie = movieData[currentMovieIndex];
+                if (currentMovie) {
+                    updateMoreInfoModal(currentMovie);
+                    moreInfoModal.show();
+                    // Setup clickable names after modal content is updated
+                    setTimeout(() => {
+                        setupClickableNames();
+                    }, 100);
+                }
+            });
+        }
+
+        function convertToEmbedUrl(url) {
+            if (url.includes('youtube.com/embed/')) {
+                return url;
+            } else if (url.includes('youtube.com/watch?v=')) {
+                return url.replace("https://www.youtube.com/watch?v=", "https://www.youtube.com/embed/");
+            } else if (url.includes('youtu.be/')) {
+                return url.replace("https://youtu.be/", "https://www.youtube.com/embed/");
+            }
+            return url;
+        }
+
+        // Function สร้าง movie cards อัตโนมัติจาก movieData
+        function renderMovieCards() {
+            const carouselInner = document.getElementById('carouselInner');
+            if (!carouselInner || !movieData || movieData.length === 0) {
+                console.error('Cannot render movie cards: carouselInner or movieData is missing');
+                return;
+            }
+
+            // ลบ cards เดิมทั้งหมด
+            carouselInner.innerHTML = '';
+
+            // สร้าง cards ใหม่จาก movieData
+            movieData.forEach((movie, index) => {
+                const card = document.createElement('div');
+                card.className = 'movie-card';
+                card.setAttribute('data-movie-id', movie.id);
+                card.setAttribute('data-movie-index', index); // เพิ่ม index สำหรับการค้นหา
+                if (index === currentMovieIndex) {
+                    card.classList.add('active'); // card ที่ active
+                }
+
+                const img = document.createElement('img');
+                img.src = movie.poster;
+                img.alt = `${movie.title} Poster`;
+
+                card.appendChild(img);
+                carouselInner.appendChild(card);
+            });
+
+            console.log(`Rendered ${movieData.length} movie cards`);
+        }
+
+        // Function setup carousel (event listeners และ arrows)
+        function setupCarousel() {
+            // Query movieCards ใหม่
+            movieCards = getMovieCards();
+
+            if (!movieCards || movieCards.length === 0) {
+                console.warn('No movie cards found for carousel setup');
+                return;
+            }
+
+            // ใช้ event delegation สำหรับ movie cards (ไม่ต้อง clone/replace)
+            const carouselInner = document.getElementById('carouselInner');
+            if (carouselInner) {
+                // ลบ event listener เดิม (ถ้ามี) โดยใช้ named function
+                if (carouselInner._cardClickHandler) {
+                    carouselInner.removeEventListener('click', carouselInner._cardClickHandler);
+                }
+
+                // สร้าง event handler ใหม่
+                carouselInner._cardClickHandler = (e) => {
+                    const card = e.target.closest('.movie-card');
+                    if (card) {
+                        const index = parseInt(card.getAttribute('data-movie-index'));
+                        if (!isNaN(index) && movieData[index]) {
+                            isProgrammaticScroll = true; // Set flag to prevent scroll handler interference
+                            currentMovieIndex = index;
+                            updateHeroBanner(movieData[currentMovieIndex]);
+                            setActiveMovieCard(currentMovieIndex);
+                            // Reset flag after scroll completes
+                            setTimeout(() => {
+                                isProgrammaticScroll = false;
+                            }, 500);
+                        }
+                    }
+                };
+
+                carouselInner.addEventListener('click', carouselInner._cardClickHandler);
+            }
+
+            // Setup carousel arrows
+            const leftArrow = document.getElementById('carouselLeftArrow');
+            const rightArrow = document.getElementById('carouselRightArrow');
+
+            if (leftArrow && rightArrow && movieCarousel && movieCards.length > 0) {
+                // ลบ event listeners เดิม (ถ้ามี)
+                if (leftArrow._clickHandler) {
+                    leftArrow.removeEventListener('click', leftArrow._clickHandler);
+                }
+                if (rightArrow._clickHandler) {
+                    rightArrow.removeEventListener('click', rightArrow._clickHandler);
+                }
+
+                const scrollStep = movieCards[0].offsetWidth + 20;
+
+                // สร้าง event handlers ใหม่
+                leftArrow._clickHandler = (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    isProgrammaticScroll = true;
+                    const currentScroll = movieCarousel.scrollLeft;
+                    const newScroll = Math.max(0, currentScroll - scrollStep);
+                    movieCarousel.scrollTo({
+                        left: newScroll,
+                        behavior: 'smooth'
+                    });
+                    setTimeout(() => {
+                        isProgrammaticScroll = false;
+                    }, 500);
+                };
+
+                rightArrow._clickHandler = (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    isProgrammaticScroll = true;
+                    const currentScroll = movieCarousel.scrollLeft;
+                    const maxScroll = movieCarousel.scrollWidth - movieCarousel.clientWidth;
+                    const newScroll = Math.min(maxScroll, currentScroll + scrollStep);
+                    movieCarousel.scrollTo({
+                        left: newScroll,
+                        behavior: 'smooth'
+                    });
+                    setTimeout(() => {
+                        isProgrammaticScroll = false;
+                    }, 500);
+                };
+
+                leftArrow.addEventListener('click', leftArrow._clickHandler);
+                rightArrow.addEventListener('click', rightArrow._clickHandler);
+            }
+
+            // Add scroll event listener to update active card
+            if (movieCarousel) {
+                // Remove old scroll handler if exists
+                if (movieCarousel._scrollHandler) {
+                    movieCarousel.removeEventListener('scroll', movieCarousel._scrollHandler);
+                }
+
+                let scrollTimeout;
+                movieCarousel._scrollHandler = () => {
+                    // Skip if this is a programmatic scroll (from card click or arrow)
+                    if (isProgrammaticScroll) return;
+
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(() => {
+                        const cards = getMovieCards();
+                        if (cards.length === 0) return;
+
+                        const carouselCenter = movieCarousel.scrollLeft + (movieCarousel.offsetWidth / 2);
+                        let closestCard = null;
+                        let closestDistance = Infinity;
+
+                        cards.forEach((card, index) => {
+                            const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+                            const distance = Math.abs(cardCenter - carouselCenter);
+                            if (distance < closestDistance) {
+                                closestDistance = distance;
+                                closestCard = { card, index };
+                            }
+                        });
+
+                        if (closestCard && closestCard.index !== currentMovieIndex) {
+                            currentMovieIndex = closestCard.index;
+                            updateHeroBanner(movieData[currentMovieIndex]);
+                            setActiveMovieCard(currentMovieIndex);
+                        }
+                    }, 150);
+                };
+
+                movieCarousel.addEventListener('scroll', movieCarousel._scrollHandler);
+            }
+
+            console.log('Carousel setup completed');
+        }
+
+        const movieData = [
+            {
+                id: 1,
+                title: "Titanic",
+                year: "1997",
+                runtime: "3h 14min",
+                genre: "Romance, Drama",
+                director: "James Cameron",
+                cast: "Leonardo DiCaprio, Kate Winslet",
+                synopsis: "เรื่องราวความรักระหว่าง แจ็ค กับ โรสหญิงสาวจากครอบครัวชนชั้นสูงได้ขึ้นเรือไปกับครอบครัวและคู่หมั้นของเธอ แต่แล้วเธอกลับพบกับ แจ็ค ชายหนุ่มยากจนที่ชนะตั๋วเดินทางในลอตเตอรี เรื่องราวความรักระหว่างพวกเขาค่อยๆ พัฒนาในขณะที่เรือเดินทางข้ามมหาสมุทรแอตแลนติก โดยมีอุปสรรคทั้งทางสังคมและความขัดแย้งภายในจิตใจของทั้งคู่",
+                background: "https://m.media-amazon.com/images/M/MV5BMTcxNjczODgyMl5BMl5BanBnXkFtZTcwODY0NTk1Nw@@._V1_.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=kVrqfYjkTdQ",
+                imdbScore: "7.9",
+                rottenTomatoesScore: "88%",
+            },
+            {
+                id: 2,
+                title: "Amélie",
+                year: "2001",
+                runtime: "2h 2min",
+                genre: "Romance, Comedy",
+                director: "Jean-Pierre Jeunet",
+                cast: "Audrey Tautou, Mathieu Kassovitz",
+                synopsis: "Amélie Poulain หญิงสาวชาวปารีสที่มีจินตนาการอันสดใสและมองโลกในแง่ดี เธอใช้ชีวิตอย่างเงียบสงบในร้านกาแฟเล็กๆ จนกระทั่งวันหนึ่งเธอพบกล่องสมบัติเก่าๆ ที่ซ่อนอยู่ในห้องของเธอ Amélie ตัดสินใจที่จะส่งคืนกล่องนั้นให้กับเจ้าของเดิม และจากนั้นเธอก็เริ่มต้นการผจญภัยในการเปลี่ยนแปลงชีวิตของคนรอบข้างด้วยการกระทำเล็กๆ น้อยๆ ที่สร้างความสุข",
+                background: "https://film-grab.com/wp-content/uploads/photo-gallery/15%20(63).jpg?bwg=1547143600",
+                poster: "https://m.media-amazon.com/images/M/MV5BOTNmYzY0MWQtZGZmNy00Y2Y4LWFmMDQtMTZjYTdiYzEwZGQ2XkEyXkFqcGc@._V1_.jpg",
+                trailer: "https://www.youtube.com/watch?v=HUECWi5pX7o",
+                imdbScore: "8.3",
+                rottenTomatoesScore: "90%",
+            },
+            {
+                id: 3,
+                title: "Eternal Sunshine of the Spotless Mind",
+                year: "2004",
+                runtime: "1h 48min",
+                genre: "Romance, Sci-Fi",
+                director: "Michel Gondry",
+                cast: "Jim Carrey, Kate Winslet, Kirsten Dunst",
+                synopsis: "หลังจากการเลิกรากันอย่างเจ็บปวด โจเอลและเคทตัดสินใจลบความทรงจำเกี่ยวกับกันและกันผ่านกระบวนการทางวิทยาศาสตร์ แต่เมื่อความทรงจำของพวกเขาค่อยๆ ถูกลบออกไป โจเอลเริ่มตระหนักถึงความสำคัญของความทรงจำเหล่านั้นและพยายามที่จะยึดมั่นในความรักที่เคยมีร่วมกัน",
+                background: "https://film-grab.com/wp-content/uploads/photo-gallery/28%20(360).jpg?bwg=1547215441",
+                poster: "https://m.media-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_.jpg",
+                trailer: "https://www.youtube.com/watch?v=quuMv7cGUn0",
+                imdbScore: "8.3",
+                rottenTomatoesScore: "93%",
+            },
+            {
+                id: 4,
+                title: "Before Sunrise",
+                year: "1995",
+                runtime: "1h 41min",
+                genre: "Romance, Drama",
+                director: "Richard Linklater",
+                cast: "Ethan Hawke, Julie Delpy",
+                synopsis: "ในคืนหนึ่งบนรถไฟจากบูดาเปสต์ไปเวียนนา เจสซี่ นักท่องเที่ยวชาวอเมริกันและเซลีน นักศึกษาชาวฝรั่งเศสได้พบกันและตัดสินใจลงจากรถไฟที่เวียนนาเพื่อใช้เวลาหนึ่งวันด้วยกันในเมือง ก่อนที่เจสซี่จะต้องกลับไปยังสหรัฐอเมริกา เรื่องราวความรักและการค้นพบตัวเองของพวกเขาเริ่มต้นขึ้นท่ามกลางบรรยากาศโรแมนติกของเวียนนา",
+                background: "https://film-grab.com/wp-content/uploads/photo-gallery/10%20(132).jpg?bwg=1547149466",
+                poster: "https://m.media-amazon.com/images/M/MV5BZDZhZmI1ZTUtYWI3NC00NTMwLTk3NWMtNDc0OGNjM2I0ZjlmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=9v6X-Dytlko",
+                imdbScore: "8.1",
+                rottenTomatoesScore: "100%",
+            },
+            {
+                id: 5,
+                title: "La La Land",
+                year: "2016",
+                runtime: "2h 8min",
+                genre: "Romance, Musical",
+                director: "Damien Chazelle",
+                cast: "Ryan Gosling, Emma Stone",
+                synopsis: "เรื่องราวความรักระหว่างมิเซล นักเปียโนแจ๊สที่มีความฝันอยากเป็นนักดนตรีมืออาชีพ และมียา นักแสดงสาวที่ต้องการเป็นนักแสดงชื่อดัง ทั้งสองพบกันในลอสแองเจลิสและเริ่มต้นความสัมพันธ์ที่เต็มไปด้วยความหวังและความท้าทาย แต่เมื่อความฝันของพวกเขาเริ่มขัดแย้งกับความเป็นจริง ความรักของพวกเขาก็ต้องเผชิญกับการตัดสินใจที่ยากลำบาก",
+                background: "https://film-grab.com/wp-content/uploads/photo-gallery/lalal021.jpg?bwg=1551286196",
+                poster: "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_.jpg",
+                trailer: "https://www.youtube.com/watch?v=0pdqf4P9MB8",
+                imdbScore: "8.0",
+                rottenTomatoesScore: "91%",
+            },
+            {
+                id: 6,
+                title: "The Notebook",
+                year: "2004",
+                runtime: "2h 3min",
+                genre: "Romance, Drama",
+                director: "Nick Cassavetes",
+                cast: "Ryan Gosling, Rachel McAdams, James Garner",
+                synopsis: "เรื่องราวความรักอมตะของ Noah และ Allie สองคนรักที่ต้องแยกกันเพราะความแตกต่างในชนชั้น แต่ความรักของพวกเขายังคงอยู่ตลอดหลายทศวรรษ และเมื่อ Allie เริ่มสูญเสียความจำ Noah ก็อ่านเรื่องราวของพวกเขาจากสมุดบันทึกให้เธอฟังทุกวัน",
+                background: "https://m.media-amazon.com/images/M/MV5BMTU4OTcyNzYwNV5BMl5BanBnXkFtZTcwMTYxMTg0NA@@._V1_.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BZjE0ZjgzMzYtMTAxYi00NGMzLThmZDktNzFlMzA2MWRmYWQ0XkEyXkFqcGc@._V1_.jpg",
+                trailer: "https://www.youtube.com/watch?v=FC6biTjEyZw",
+                imdbScore: "7.8",
+                rottenTomatoesScore: "54%",
+            },
+            {
+                id: 7,
+                title: "About Time",
+                year: "2013",
+                runtime: "2h 3min",
+                genre: "Romance, Drama, Fantasy",
+                director: "Richard Curtis",
+                cast: "Domhnall Gleeson, Rachel McAdams, Bill Nighy",
+                synopsis: "ทิมค้นพบว่าเขาสามารถเดินทางข้ามเวลาได้ และใช้ความสามารถนี้เพื่อปรับปรุงชีวิตรักของเขากับแมรี่ แต่เมื่อเขาพบว่าการเปลี่ยนแปลงอดีตมีผลกระทบต่อปัจจุบันอย่างไม่คาดคิด ทิมต้องเรียนรู้ที่จะยอมรับชีวิตในแบบที่มันเป็นและหาความสุขในช่วงเวลาที่มีอยู่",
+                background: "https://www.indiependent.co.uk/wp-content/uploads/2024/02/at3.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BMTA1ODUzMDA3NzFeQTJeQWpwZ15BbWU3MDgxMTYxNTk@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=7OIFdWk83no",
+                imdbScore: "7.8",
+                rottenTomatoesScore: "71%",
+            },
+            {
+                id: 8,
+                title: "(500) Days of Summer",
+                year: "2009",
+                runtime: "1h 35min",
+                genre: "Romance, Drama",
+                director: "Marc Webb",
+                cast: "Joseph Gordon-Levitt, Zooey Deschanel",
+                synopsis: "ทอม หลงรักซัมเมอร์ หญิงสาวที่ไม่เชื่อในความรัก แต่เมื่อความสัมพันธ์ของพวกเขาสิ้นสุดลง ทอมต้องเผชิญกับความจริงเกี่ยวกับความรักและการเติบโตทางอารมณ์ ผ่านการย้อนรอย 500 วันที่พวกเขาใช้ร่วมกัน",
+                background: "https://film-grab.com/wp-content/uploads/photo-gallery/10%20(12).jpg?bwg=1547139586",
+                poster: "https://m.media-amazon.com/images/M/MV5BMTk5MjM4OTU1OV5BMl5BanBnXkFtZTcwODkzNDIzMw@@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=PsD0NpFSADM",
+                imdbScore: "7.6",
+                rottenTomatoesScore: "86%",
+            },
+            {
+                id: 9,
+                title: "10 Things I Hate About You",
+                year: "1999",
+                runtime: "1h 37min",
+                genre: "Romance, Drama",
+                director: "Gil Junger",
+                cast: "Heath Ledger, Julia Stiles",
+                synopsis: " เรื่องราวของแคท สแตรทฟอร์ด พี่สาวหัวรั้นและน้องสาวคนสวยอย่างเบียงก้าที่ไม่สามารถออกเดทได้จนกว่าแคทจะมีแฟน ด้วยกฎนี้ ทำให้นักเรียนใหม่ที่แอบชอบเบียงก้าอย่างคาเมรอน จึงวางแผนให้นักเรียนเกเรอย่างแพทริค เวโรนา จีบแคทเพื่อที่ตนเองจะได้ออกเดทกับเบียงก้า",
+                background: "https://variety.com/wp-content/uploads/2020/05/MSDTETH_EC003.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BOTQwYmRhNGQtODI2Mi00ZTRlLTk0Y2QtY2NkNjE1MGNhNTgwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=Ax8qnxP2TWY",
+                imdbScore: "7.4",
+                rottenTomatoesScore: "72%",
+            },
+            {
+                id: 10,
+                title: "Notting Hill",
+                year: "1999",
+                runtime: "2h 4min",
+                genre: "Romance, Drama",
+                director: "Roger Michell",
+                cast: "Hugh Grant, Julia Roberts",
+                synopsis: "เรื่องราวความรักระหว่างวิลเลียม ทัคเกอร์ เจ้าของร้านหนังสือเล็กๆ ในย่านน็อตติ้ง ฮิลล์ กับแอนนา สก็อต นักแสดงสาวชื่อดังของฮอลลีวูด เมื่อทั้งสองได้พบกันโดยบังเอิญ ความสัมพันธ์ที่ไม่ธรรมดาของพวกเขาก็เริ่มต้นขึ้น ท่ามกลางความแตกต่างในโลกของพวกเขา",
+                background: "https://m.media-amazon.com/images/M/MV5BZDIzNjljOWEtNmViMC00YmRiLWI2NTktNDBlMDkwNDhmYjI0XkEyXkFqcGc@._V1_.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BZjY3YWI5OTMtYTdlNy00ZTZiLWEwYjItN2M1MGVkMDM4ZDExXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=4RI0QvaGoiI",
+                imdbScore: "7.2",
+                rottenTomatoesScore: "84%",
+            }
+        ];
+
+        openModalBtn.addEventListener('click', () => {
+            const currentTrailer = movieData[currentMovieIndex].trailer;
+            trailerIframe.src = convertToEmbedUrl(currentTrailer);
+            trailerModal.show();
+        });
+
+        trailerModalElement.addEventListener('hidden.bs.modal', () => {
+            trailerIframe.src = '';
+        });
+
+        function updateHeroBanner(movie) {
+            heroBackgroundImage.style.opacity = '0';
+            setTimeout(() => {
+                heroBackgroundImage.src = movie.background;
+                movieTitle.textContent = movie.title;
+                movieMetadata.innerHTML = `
+                    <span class="year">${movie.year}</span> 
+                    <span class="runtime">${movie.runtime}</span> 
+                    <span class="genre">${movie.genre}</span>
+                `;
+                synopsisHero.textContent = movie.synopsis;
+                document.getElementById('imdb-score').textContent = movie.imdbScore;
+                document.getElementById('rotten-tomatoes-score').textContent = movie.rottenTomatoesScore;
+                heroBackgroundImage.style.opacity = '1';
+            }, 300);
+        }
+
+        function setActiveMovieCard(index) {
+            const cards = getMovieCards(); // Query cards ใหม่ทุกครั้ง
+            cards.forEach((card, i) => {
+                card.classList.toggle('active', i === index);
+            });
+            const activeCard = cards[index];
+            if (activeCard && movieCarousel) {
+                isProgrammaticScroll = true; // Set flag before scrolling
+                const scrollOffset = activeCard.offsetLeft - (movieCarousel.offsetWidth / 2) + (activeCard.offsetWidth / 2);
+                movieCarousel.scroll({
+                    left: scrollOffset,
+                    behavior: 'smooth'
+                });
+                // Reset flag after scroll completes
+                setTimeout(() => {
+                    isProgrammaticScroll = false;
+                }, 500);
+            }
+        }
+
+        // สร้าง movie cards อัตโนมัติจาก movieData
+        renderMovieCards();
+
+        // Setup carousel (event listeners และ arrows)
+        setupCarousel();
+
+        // โหลดข้อมูลหนังเริ่มต้น
+        if (movieData.length > 0) {
+            // ตรวจสอบว่า currentMovieIndex ยังอยู่ใน range หรือไม่
+            if (currentMovieIndex >= movieData.length) {
+                currentMovieIndex = 0;
+            }
+            updateHeroBanner(movieData[currentMovieIndex]);
+            setActiveMovieCard(currentMovieIndex);
+        }
+
+        // Carousel navigation logic ถูกจัดการใน setupCarousel() แล้ว
+
+        const searchInput = document.getElementById('searchInput');
+        const searchForm = document.querySelector('.search-form');
+
+        function performSearch(searchTerm) {
+            if (!searchTerm || searchTerm.trim() === '') {
+                return false;
+            }
+            const term = searchTerm.trim().toLowerCase();
+            const foundMovie = movieData.find(movie =>
+                movie.title.toLowerCase().includes(term) ||
+                movie.genre.toLowerCase().includes(term) ||
+                movie.synopsis.toLowerCase().includes(term)
+            );
+            if (foundMovie) {
+                const movieIndex = movieData.findIndex(m => m.id === foundMovie.id);
+                if (movieIndex !== -1) {
+                    currentMovieIndex = movieIndex;
+                    updateHeroBanner(movieData[currentMovieIndex]);
+                    setActiveMovieCard(currentMovieIndex);
+                    setTimeout(() => {
+                        const cards = getMovieCards(); // Query cards ใหม่ทุกครั้ง
+                        const foundCard = cards[movieIndex];
+                        if (foundCard) {
+                            foundCard.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                        }
+                    }, 350);
+                }
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        if (searchForm && searchInput) {
+            searchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                if (searchTerm === '') {
+                    return;
+                }
+                const found = performSearch(searchTerm);
+                if (!found) {
+                    alert('ไม่พบหนังที่คุณค้นหา');
+                } else {
+                    const url = new URL(window.location);
+                    url.searchParams.delete('search');
+                    window.history.replaceState({}, '', url);
+                }
+            });
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchParam = urlParams.get('search');
+        if (searchParam) {
+            setTimeout(() => {
+                searchInput.value = searchParam;
+                const found = performSearch(searchParam);
+                if (!found) {
+                    alert('ไม่พบหนังที่คุณค้นหา');
+                }
+            }, 100);
+        }
+
+        // --- Person Modal Functionality ---
+        // Movie data for each person - generated from movieData + additional movies
+        let personMoviesData = {};
+        
+        // Additional movies for famous directors and actors
+        const additionalMoviesData = {
+            'James Cameron': {
+                type: 'director',
+                movies: [
+                    { name: 'Titanic (1997)', poster: 'https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Avatar (2009)', poster: 'https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Avatar: The Way of Water (2022)', poster: 'https://m.media-amazon.com/images/M/MV5BMWNlMWQyMTQtZjc5MC00NTljLTgxZTctZDZiZTBmODY5MTkyXkEyXkFqcGc@._V1_.jpg' },
+                    { name: 'The Terminator (1984)', poster: 'https://m.media-amazon.com/images/M/MV5BZmE0YzIxM2QtMGNlMi00MjRmLWE3MWMtOWQzMGVjMmU0YTFmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Terminator 2: Judgment Day (1991)', poster: 'https://m.media-amazon.com/images/M/MV5BNGMyMGNkMDUtMjc2Ni00NWFlLTgyODEtZTY2MzBiZTg0OWZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Leonardo DiCaprio': {
+                type: 'actor',
+                movies: [
+                    { name: 'Inception (2010)', poster: 'https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'The Revenant (2015)', poster: 'https://m.media-amazon.com/images/M/MV5BYTgwNmQzZDctMjNmOS00OTExLTkwM2UtNzJmOTJhODFjOTdlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Django Unchained (2012)', poster: 'https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Titanic (1997)', poster: 'https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'The Wolf of Wall Street (2013)', poster: 'https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Shutter Island (2010)', poster: 'https://m.media-amazon.com/images/M/MV5BN2FjNWExYzEtY2YzOC00YjNlLTllMTQtNmIwM2Q1YzBhOWM1XkEyXkFqcGc@._V1_.jpg' }
+                ]
+            },
+            'Kate Winslet': {
+                type: 'actor',
+                movies: [
+                    { name: 'The Reader (2008)', poster: 'https://m.media-amazon.com/images/M/MV5BZmQ3ZjcxMmEtMzFjMS00MzYwLTllZTgtN2ZkN2RjNjQ3OTViXkEyXkFqcGc@._V1_.jpg' },
+                    { name: 'Revolutionary Road (2008)', poster: 'https://m.media-amazon.com/images/M/MV5BMTczNDgzMjczOV5BMl5BanBnXkFtZTcwOTU3MzMwMg@@._V1_.jpg' },
+                    { name: 'The Holiday (2006)', poster: 'https://m.media-amazon.com/images/M/MV5BZmEwNDg0M2QtMDdiNy00YTliLTk4ZjctOThjZjczODVmMTdkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Ryan Gosling': {
+                type: 'actor',
+                movies: [
+                    { name: 'Drive (2011)', poster: 'https://m.media-amazon.com/images/M/MV5BZjY5ZjQyMjMtMmEwOC00Nzc2LTllYTctYmNkMzU5NzVhMjE2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Blade Runner 2049 (2017)', poster: 'https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'The Nice Guys (2016)', poster: 'https://m.media-amazon.com/images/M/MV5BODNlZmNlZjItNzMwZC00YzQyLWI2YjYtMTI5MWYyNTM5YjI5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'First Man (2018)', poster: 'https://m.media-amazon.com/images/M/MV5BMDBhOTM1OTUtODU1OC00NDBiLWFhZTItZjk4MGU0OTczMTI0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Emma Stone': {
+                type: 'actor',
+                movies: [
+                    { name: 'The Favourite (2018)', poster: 'https://m.media-amazon.com/images/M/MV5BMTU1NzM0NjE5NF5BMl5BanBnXkFtZTgwOTQ1NzA1NDM@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Birdman (2014)', poster: 'https://m.media-amazon.com/images/M/MV5BODAzNDMxMzAxOV5BMl5BanBnXkFtZTgwMDMxMjA4MjE@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'The Help (2011)', poster: 'https://m.media-amazon.com/images/M/MV5BMTUzNTg3MDg3NF5BMl5BanBnXkFtZTcwMTk5MjM5Nw@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Easy A (2010)', poster: 'https://m.media-amazon.com/images/M/MV5BMTMyMzI3OTM0NV5BMl5BanBnXkFtZTcwMTY5MjM5Mw@@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Rachel McAdams': {
+                type: 'actor',
+                movies: [
+                    { name: 'Mean Girls (2004)', poster: 'https://m.media-amazon.com/images/M/MV5BMjE1MDQ4MjI1OV5BMl5BanBnXkFtZTcwNzcwODAzMw@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'The Time Traveler\'s Wife (2009)', poster: 'https://m.media-amazon.com/images/M/MV5BMTk1ODk3MzQxMV5BMl5BanBnXkFtZTcwMDMyNzcyMg@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Spotlight (2015)', poster: 'https://m.media-amazon.com/images/M/MV5BMjIyOTM5OTIzNV5BMl5BanBnXkFtZTgwMDkzODE2NjE@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Doctor Strange (2016)', poster: 'https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Damien Chazelle': {
+                type: 'director',
+                movies: [
+                    { name: 'Whiplash (2014)', poster: 'https://m.media-amazon.com/images/M/MV5BOTA5NDZlZGUtMjAxOS00YTRkLTkwYmMtYWQ0NWEwZDZiNjEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'First Man (2018)', poster: 'https://m.media-amazon.com/images/M/MV5BMDBhOTM1OTUtODU1OC00NDBiLWFhZTItZjk4MGU0OTczMTI0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Babylon (2022)', poster: 'https://m.media-amazon.com/images/M/MV5BNjlkYjc4NGMtZjc3MS00NjQ3LWFlNmMtYjE5NTIyMDMwMDM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Richard Linklater': {
+                type: 'director',
+                movies: [
+                    { name: 'Before Sunset (2004)', poster: 'https://m.media-amazon.com/images/M/MV5BMTQ1MjAwNTM5Ml5BMl5BanBnXkFtZTYwNDM0MTc3._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Before Midnight (2013)', poster: 'https://m.media-amazon.com/images/M/MV5BMjA5NzgxODE2NF5BMl5BanBnXkFtZTcwNTI1NTI0OQ@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Boyhood (2014)', poster: 'https://m.media-amazon.com/images/M/MV5BMTYzNDc2MDc0N15BMl5BanBnXkFtZTgwOTcwMDc5MTE@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'School of Rock (2003)', poster: 'https://m.media-amazon.com/images/M/MV5BMjEwOTMzNjYzMl5BMl5BanBnXkFtZTcwNjczMTQyMQ@@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Michel Gondry': {
+                type: 'director',
+                movies: [
+                    { name: 'The Science of Sleep (2006)', poster: 'https://m.media-amazon.com/images/M/MV5BMTI4Nzk3OTQ5NV5BMl5BanBnXkFtZTcwMjY2NTIzMQ@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Be Kind Rewind (2008)', poster: 'https://m.media-amazon.com/images/M/MV5BMTYzNDU4MDk4N15BMl5BanBnXkFtZTcwODc3MjE1MQ@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'The Green Hornet (2011)', poster: 'https://m.media-amazon.com/images/M/MV5BMTU0ODU2OTY3NV5BMl5BanBnXkFtZTcwMzI1OTQ3NA@@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Jim Carrey': {
+                type: 'actor',
+                movies: [
+                    { name: 'The Truman Show (1998)', poster: 'https://m.media-amazon.com/images/M/MV5BMDIzODcyY2EtMmY2MC00ZWVlLTgwMzAtMjQwOWUyNmJjNTYyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'The Mask (1994)', poster: 'https://m.media-amazon.com/images/M/MV5BOWExYjI3MzktMDI3Ny00ZTRhLWE1NzYtYTk5ZTQ0MTE5YjFjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Ace Ventura: Pet Detective (1994)', poster: 'https://m.media-amazon.com/images/M/MV5BYmVhNmFmOGYtZjgwNi00ZGQ0LThiMmQtOGUyMzMyYjcyYWMzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Dumb and Dumber (1994)', poster: 'https://m.media-amazon.com/images/M/MV5BZDQwMjNiMTQtY2UwYy00NjhiLTk0ZWEtZWM5ZWM2N2MzYzBhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Joseph Gordon-Levitt': {
+                type: 'actor',
+                movies: [
+                    { name: '500 Days of Summer (2009)', poster: 'https://m.media-amazon.com/images/M/MV5BMTk5MjM4OTU1OV5BMl5BanBnXkFtZTcwODkzNDIzMw@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Looper (2012)', poster: 'https://m.media-amazon.com/images/M/MV5BMTg5NTA3NTg4NF5BMl5BanBnXkFtZTcwNTA0NDYzOA@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'The Dark Knight Rises (2012)', poster: 'https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: '50/50 (2011)', poster: 'https://m.media-amazon.com/images/M/MV5BMTg2MzI5NzY5N15BMl5BanBnXkFtZTcwNzg2ODIwNw@@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Ethan Hawke': {
+                type: 'actor',
+                movies: [
+                    { name: 'Training Day (2001)', poster: 'https://m.media-amazon.com/images/M/MV5BMDZkMTUxYWEtMDY5NS00ZTA5LTg3MTItNTlkZWE1YWRjYjMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Gattaca (1997)', poster: 'https://m.media-amazon.com/images/M/MV5BMTQ4NzM3MjE5N15BMl5BanBnXkFtZTcwMTUyOTM5Mg@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Sinister (2012)', poster: 'https://m.media-amazon.com/images/M/MV5BMjI5MTg1Njg0Ml5BMl5BanBnXkFtZTcwNzg2NTM5Nw@@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Julie Delpy': {
+                type: 'actor',
+                movies: [
+                    { name: '2 Days in Paris (2007)', poster: 'https://m.media-amazon.com/images/M/MV5BMTU5NjU2MjY2M15BMl5BanBnXkFtZTcwMjY3MjY1MQ@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: '2 Days in New York (2012)', poster: 'https://m.media-amazon.com/images/M/MV5BMTQ2NzQ3NzE0N15BMl5BanBnXkFtZTcwNzQ5NzY3Nw@@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Richard Curtis': {
+                type: 'director',
+                movies: [
+                    { name: 'Love Actually (2003)', poster: 'https://m.media-amazon.com/images/M/MV5BNzY4NzQ5NDI3Nl5BMl5BanBnXkFtZTcwNjk0NzcyMw@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Four Weddings and a Funeral (1994)', poster: 'https://m.media-amazon.com/images/M/MV5BMTQ2MDg5OTcxNF5BMl5BanBnXkFtZTcwMjYxNTgxMw@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Notting Hill (1999)', poster: 'https://m.media-amazon.com/images/M/MV5BZjY3YWI5OTMtYTdlNy00ZTZiLWEwYjItN2M1MGVkMDM4ZDExXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Hugh Grant': {
+                type: 'actor',
+                movies: [
+                    { name: 'Four Weddings and a Funeral (1994)', poster: 'https://m.media-amazon.com/images/M/MV5BMTQ2MDg5OTcxNF5BMl5BanBnXkFtZTcwMjYxNTgxMw@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Love Actually (2003)', poster: 'https://m.media-amazon.com/images/M/MV5BNzY4NzQ5NDI3Nl5BMl5BanBnXkFtZTcwNjk0NzcyMw@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Bridget Jones\'s Diary (2001)', poster: 'https://m.media-amazon.com/images/M/MV5BNzk5MDczNjYxOF5BMl5BanBnXkFtZTcwNDE2MjYyMQ@@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            },
+            'Julia Roberts': {
+                type: 'actor',
+                movies: [
+                    { name: 'Pretty Woman (1990)', poster: 'https://m.media-amazon.com/images/M/MV5BNzY4NzQ5NDI3Nl5BMl5BanBnXkFtZTcwNjk0NzcyMw@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Erin Brockovich (2000)', poster: 'https://m.media-amazon.com/images/M/MV5BNzY4NzQ5NDI3Nl5BMl5BanBnXkFtZTcwNjk0NzcyMw@@._V1_FMjpg_UX1000_.jpg' },
+                    { name: 'Ocean\'s Eleven (2001)', poster: 'https://m.media-amazon.com/images/M/MV5BNzY4NzQ5NDI3Nl5BMl5BanBnXkFtZTcwNjk0NzcyMw@@._V1_FMjpg_UX1000_.jpg' }
+                ]
+            }
+        };
+        
+        // Function to generate personMoviesData from movieData
+        function generatePersonMoviesData() {
+            personMoviesData = {};
+            if (movieData && movieData.length > 0) {
+                movieData.forEach(movie => {
+                    // Add director
+                    if (movie.director && movie.director !== 'ไม่ระบุ') {
+                        if (!personMoviesData[movie.director]) {
+                            personMoviesData[movie.director] = {
+                                type: 'director',
+                                movies: []
+                            };
+                        }
+                        personMoviesData[movie.director].movies.push({
+                            name: `${movie.title} (${movie.year})`,
+                            poster: movie.poster
+                        });
+                    }
+                    
+                    // Add cast
+                    if (movie.cast && movie.cast !== 'ไม่ระบุ') {
+                        const castNames = movie.cast.split(',').map(name => name.trim());
+                        castNames.forEach(actorName => {
+                            if (!personMoviesData[actorName]) {
+                                personMoviesData[actorName] = {
+                                    type: 'actor',
+                                    movies: []
+                                };
+                            }
+                            personMoviesData[actorName].movies.push({
+                                name: `${movie.title} (${movie.year})`,
+                                poster: movie.poster
+                            });
+                        });
+                    }
+                });
+            }
+            
+            // Add additional movies for famous directors and actors
+            Object.keys(additionalMoviesData).forEach(personName => {
+                if (!personMoviesData[personName]) {
+                    personMoviesData[personName] = additionalMoviesData[personName];
+                } else {
+                    // Merge additional movies (avoid duplicates)
+                    const existingMovies = personMoviesData[personName].movies.map(m => m.name);
+                    additionalMoviesData[personName].movies.forEach(movie => {
+                        if (!existingMovies.includes(movie.name)) {
+                            personMoviesData[personName].movies.push(movie);
+                        }
+                    });
+                }
+            });
+        }
+        
+        // Generate personMoviesData after movieData is defined
+        generatePersonMoviesData();
+
+        // Store the previous modal ID
+        let previousModalId = null;
+
+        // Add click handlers to all clickable names
+        function setupClickableNames() {
+            const clickableNames = document.querySelectorAll('.clickable-name');
+
+            clickableNames.forEach(nameElement => {
+                // Skip if already has listener
+                if (nameElement.hasAttribute('data-listener-attached')) return;
+                nameElement.setAttribute('data-listener-attached', 'true');
+
+                nameElement.style.cursor = 'pointer';
+                nameElement.style.color = '#FFD700';
+                nameElement.style.textDecoration = 'underline';
+                nameElement.style.transition = 'color 0.3s';
+
+                nameElement.addEventListener('mouseenter', function () {
+                    this.style.color = '#FFA500';
+                });
+
+                nameElement.addEventListener('mouseleave', function () {
+                    this.style.color = '#FFD700';
+                });
+
+                nameElement.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const personName = this.getAttribute('data-person-name');
+                    const personType = this.getAttribute('data-person-type');
+
+                    // Store current modal ID
+                    const currentModal = document.querySelector('.modal.show');
+                    if (currentModal) {
+                        previousModalId = currentModal.id;
+                    }
+
+                    // Close all modals first
+                    const allModals = document.querySelectorAll('.modal.show');
+                    allModals.forEach(modal => {
+                        const modalInstance = bootstrap.Modal.getInstance(modal);
+                        if (modalInstance) {
+                            modalInstance.hide();
+                        }
+                    });
+
+                    // Wait for modal to close, then show person modal
+                    setTimeout(() => {
+                        showPersonModal(personName, personType);
+                    }, 300);
+                });
+            });
+        }
+
+        // Function to show person modal
+        function showPersonModal(personName, personType) {
+            // Regenerate data if needed
+            if (Object.keys(personMoviesData).length === 0) {
+                generatePersonMoviesData();
+            }
+            
+            const personData = personMoviesData[personName];
+            if (!personData) {
+                alert('ไม่พบข้อมูลของ ' + personName);
+                return;
+            }
+
+            const personModal = new bootstrap.Modal(document.getElementById('personModal'));
+            const modalTitle = document.getElementById('personModalTitle');
+            const moviesContainer = document.getElementById('personMoviesContainer');
+
+            // Set title
+            const titleText = personType === 'director' ? 'ผู้กำกับ: ' : 'นักแสดง: ';
+            modalTitle.textContent = titleText + personName;
+
+            // Clear previous content
+            moviesContainer.innerHTML = '';
+
+            // Create row for movies (3 per row)
+            const movies = personData.movies;
+            for (let i = 0; i < movies.length; i += 3) {
+                const row = document.createElement('div');
+                row.className = 'row g-3 mb-4';
+
+                for (let j = i; j < Math.min(i + 3, movies.length); j++) {
+                    const movie = movies[j];
+                    const col = document.createElement('div');
+                    col.className = 'col-md-4';
+
+                    const movieCard = document.createElement('div');
+                    movieCard.className = 'person-movie-card';
+
+                    const img = document.createElement('img');
+                    img.src = movie.poster;
+                    img.alt = movie.name;
+                    img.className = 'person-movie-poster';
+                    img.style.width = '100%';
+                    img.style.height = '450px';
+                    img.style.objectFit = 'cover';
+                    img.style.display = 'block';
+                    img.style.visibility = 'visible';
+                    img.style.opacity = '1';
+
+                    const title = document.createElement('div');
+                    title.className = 'person-movie-title';
+                    title.textContent = movie.name;
+                    title.style.color = '#fff';
+                    title.style.visibility = 'visible';
+                    title.style.opacity = '1';
+                    title.style.display = 'flex';
+
+                    movieCard.appendChild(img);
+                    movieCard.appendChild(title);
+                    col.appendChild(movieCard);
+                    row.appendChild(col);
+                }
+
+                moviesContainer.appendChild(row);
+            }
+
+            // Apply styles to ensure they are applied
+            const modalContent = document.querySelector('#personModal .modal-content');
+            if (modalContent) {
+                modalContent.style.background = 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 25%, #2a2a2a 50%, #1a1a1a 75%, #0f0f0f 100%)';
+                modalContent.style.border = '3px solid #FFD700';
+                modalContent.style.borderRadius = '20px';
+                modalContent.style.color = '#fff';
+            }
+            
+            // Show modal
+            personModal.show();
+        }
+
+        // Setup clickable names on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            setupClickableNames();
+
+            // Re-setup when moreInfoModal is shown
+            const moreInfoModalElement = document.getElementById('moreInfoModal');
+            if (moreInfoModalElement) {
+                moreInfoModalElement.addEventListener('shown.bs.modal', function () {
+                    setTimeout(setupClickableNames, 100);
+                });
+            }
+        });
+
+        // Back button handler
+        const backBtn = document.getElementById('backToMovieModal');
+        if (backBtn) {
+            backBtn.addEventListener('click', function () {
+                const personModal = bootstrap.Modal.getInstance(document.getElementById('personModal'));
+                if (personModal) {
+                    personModal.hide();
+                }
+
+                // Show previous modal if exists
+                if (previousModalId) {
+                    setTimeout(() => {
+                        const prevModal = new bootstrap.Modal(document.getElementById(previousModalId));
+                        prevModal.show();
+                    }, 300);
+                }
+            });
+        }
+    </script>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 รีวิวหนัง. สงวนลิขสิทธิ์</p>
+        </div>
+    </footer>
+</body>
+
+</html>

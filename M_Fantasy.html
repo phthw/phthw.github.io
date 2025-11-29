@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Fantasy Movies - Movie Reviews</title>
+</head>
+
+<body class="movie-page-body">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark site-header">
+        <div class="container-fluid">
+
+            <a class="navbar-brand logo" href="index.html">
+                <img src="img/LOGO/SPU.png" alt="LOGO" class="mark">
+                <div><strong>MOVIEREVIEWS</strong>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarMenu"
+                aria-controls="mainNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="mainNavbarMenu" class="collapse navbar-collapse">
+                <form class="d-flex me-3 search-form" role="search">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="ค้นหาหนัง..." aria-label="Search"
+                            id="searchInput">
+                        <button class="btn btn-outline-warning" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="movieDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TOP 10 MOVIE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="movieDropdown">
+                            <li><a class="dropdown-item" href="M_Action.html">Action</a></li>
+                            <li><a class="dropdown-item" href="M_Comedy.html">Comedy</a></li>
+                            <li><a class="dropdown-item" href="M_Drama.html">Drama</a></li>
+                            <li><a class="dropdown-item" href="M_Horror.html">Horror</a></li>
+                            <li><a class="dropdown-item" href="M_Romance.html">Romance</a></li>
+                            <li><a class="dropdown-item active" href="M_Fantasy.html" aria-current="page">Fantasy</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="movieDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TOP 10 TV SHOW
+                        </a>
+                        <ul class="dropdown-menu " aria-labelledby="movieDropdown">
+                            <li><a class="dropdown-item" href="TV_Action.html">Action</a></li>
+                            <li><a class="dropdown-item" href="TV_Comedy.html">Comedy</a></li>
+                            <li><a class="dropdown-item" href="TV_Drama.html">Drama</a></li>
+                            <li><a class="dropdown-item" href="TV_Horror.html">Horror</a></li>
+                            <li><a class="dropdown-item" href="TV_Romance.html">Romance</a></li>
+                            <li><a class="dropdown-item" href="TV_Fantasy.html">Fantasy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Oscar.html" class="nav-link">OSCAR WINNERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Aboutus.html" class="nav-link">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="movie-page">
+        <div class="background-layer">
+            <img src="img/background/interstellar_bg.jpg" alt="Background Movie Cover" id="hero-background-image"
+                class="hero-bg-image">
+        </div>
+
+        <div class="container-fluid main-content-wrapper-custom">
+            <div class="row align-items-end">
+
+                <div class="col-lg-10 col-md-12">
+                    <section class="hero-banner-info" id="hero-banner-info">
+
+                        <div class="movie-logo">
+                            <h1 class="movie-title">THE LORD OF THE RINGS</h1>
+                        </div>
+                        <div class="movie-metadata">
+                            <span class="year">2001</span>
+                            <span class="runtime">2h 58min</span>
+                            <span class="genre">Fantasy, Adventure</span>
+                        </div>
+                        <p class="synopsis-hero">
+                            Frodo Baggins ต้องเดินทางไปทำลายแหวนแห่งอำนาจที่ถูกสร้างโดย Sauron
+                            เพื่อป้องกันไม่ให้โลกมืดถูกปกครองโดยความชั่วร้าย...
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn btn-warning btn-lg me-2" id="openTrailerModal">
+                                <span class="icon">▶</span> WATCH TRAILER
+                            </button>
+                            <button class="btn btn-outline-light btn-lg" id="openMoreInfoModal">
+                                MORE INFO
+                            </button>
+                        </div>
+                        <div class="score">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1920px-IMDB_Logo_2016.svg.png"
+                                alt="">
+                            <span class="score-value" id="imdb-score">8.8</span>
+                            <img src="https://variety.com/wp-content/uploads/2017/08/rotten-tomatoes-logo1.jpg?w=1000&h=563&crop=1"
+                                alt="">
+                            <span class="score-value" id="rotten-tomatoes-score">8.8</span>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="movie-carousel-section" id="movieCarouselSection">
+            <h2 class="carousel-title">Fantasy</h2>
+            <div class="movie-carousel-wrapper">
+                <button class="carousel-arrow left-arrow" id="carouselLeftArrow">◀</button>
+                <div class="movie-carousel" id="movieCarousel">
+                    <div class="carousel-inner" id="carouselInner">
+                        <!-- Movie cards will be generated automatically from movieData -->
+                    </div>
+                </div>
+                <button class="carousel-arrow right-arrow" id="carouselRightArrow">▶</button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- More Info Modal -->
+    <div class="modal fade" id="moreInfoModal" tabindex="-1" aria-labelledby="moreInfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: #1a1a1a; color: #fff;">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="moreInfoModalLabel">Movie Information</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <img id="moreInfoPoster" src="" alt="Movie Poster" class="img-fluid rounded"
+                            style="max-width: 300px; max-height: 450px; object-fit: cover;">
+                    </div>
+                    <div class="movie-info-content">
+                        <h3 id="moreInfoTitle" class="text-center mb-4 modal-title-custom"></h3>
+                        <div class="mb-4">
+                            <p class="mb-1"><strong>ปีที่ฉาย:</strong> <span id="moreInfoYear"></span></p>
+                            <p class="mb-1"><strong>ประเภท:</strong> <span id="moreInfoGenre"></span></p>
+                            <p class="mb-1"><strong>ความยาว:</strong> <span id="moreInfoRuntime"></span></p>
+                            <p class="mb-1"><strong>ผู้กำกับ:</strong> <span id="moreInfoDirector"></span></p>
+                            <p class="mb-1"><strong>นักแสดงนำ:</strong> <span id="moreInfoCast"></span></p>
+                        </div>
+                        <div>
+                            <h5 class="mb-3 modal-subtitle-custom">เรื่องย่อ</h5>
+                            <p id="moreInfoSynopsis" class="text-light" style="line-height: 1.6;"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- trailer -->
+    <div class="modal fade" id="trailerModal" tabindex="-1" aria-labelledby="trailerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content" style="background-color: #000;">
+
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/e6Y1_D4iE0E" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Person Detail Modal -->
+    <div class="modal fade" id="personModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="personModalTitle"></h5>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="person-movies-container" id="personMoviesContainer">
+                        <!-- Movies will be dynamically inserted here -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" id="backToMovieModal">ย้อนกลับ</button>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        const movieCarousel = document.getElementById('movieCarousel');
+        const carouselInner = movieCarousel.querySelector('.carousel-inner');
+        // ใช้ function เพื่อ query movieCards ใหม่ทุกครั้ง (เพื่อให้ได้ cards ล่าสุด)
+        function getMovieCards() {
+            return movieCarousel.querySelectorAll('.movie-card');
+        }
+        let movieCards = getMovieCards();
+        console.log('Total movie cards found:', movieCards.length); // Debug: ตรวจสอบจำนวน cards
+        const heroBackgroundImage = document.getElementById('hero-background-image');
+        const movieTitle = document.querySelector('.movie-title');
+        const movieMetadata = document.querySelector('.movie-metadata');
+        const synopsisHero = document.querySelector('.synopsis-hero');
+        const trailerIframe = document.querySelector('#trailerModal iframe');
+        const carouselLeftArrow = document.getElementById('carouselLeftArrow');
+        const carouselRightArrow = document.getElementById('carouselRightArrow');
+
+        let currentMovieIndex = 0;
+        let isProgrammaticScroll = false; // Flag to prevent scroll handler from interfering
+
+        const trailerModalElement = document.getElementById('trailerModal');
+        const trailerModal = new bootstrap.Modal(trailerModalElement);
+        const openModalBtn = document.getElementById('openTrailerModal');
+
+        const moreInfoModalElement = document.getElementById('moreInfoModal');
+        const moreInfoModal = new bootstrap.Modal(moreInfoModalElement);
+        const openMoreInfoBtn = document.getElementById('openMoreInfoModal');
+
+        function updateMoreInfoModal(movie) {
+            document.getElementById('moreInfoPoster').src = movie.poster;
+            document.getElementById('moreInfoTitle').textContent = movie.title;
+            document.getElementById('moreInfoYear').textContent = movie.year;
+            document.getElementById('moreInfoGenre').textContent = movie.genre;
+            document.getElementById('moreInfoRuntime').textContent = movie.runtime;
+
+            // Update director with clickable name
+            const directorElement = document.getElementById('moreInfoDirector');
+            if (movie.director && movie.director !== 'ไม่ระบุ') {
+                directorElement.innerHTML = `<span class="clickable-name" data-person-type="director" data-person-name="${movie.director}">${movie.director}</span>`;
+            } else {
+                directorElement.textContent = movie.director || 'ไม่ระบุ';
+            }
+
+            // Update cast with clickable names
+            const castElement = document.getElementById('moreInfoCast');
+            if (movie.cast && movie.cast !== 'ไม่ระบุ') {
+                const castNames = movie.cast.split(',').map(name => name.trim());
+                castElement.innerHTML = castNames.map(name =>
+                    `<span class="clickable-name" data-person-type="actor" data-person-name="${name}">${name}</span>`
+                ).join(', ');
+            } else {
+                castElement.textContent = movie.cast || 'ไม่ระบุ';
+            }
+
+            document.getElementById('moreInfoSynopsis').textContent = movie.synopsis;
+        }
+
+        if (openMoreInfoBtn) {
+            openMoreInfoBtn.addEventListener('click', () => {
+                const currentMovie = movieData[currentMovieIndex];
+                if (currentMovie) {
+                    updateMoreInfoModal(currentMovie);
+                    moreInfoModal.show();
+                    // Setup clickable names after modal content is updated
+                    setTimeout(() => {
+                        setupClickableNames();
+                    }, 100);
+                }
+            });
+        }
+
+        function convertToEmbedUrl(url) {
+            if (url.includes('youtube.com/embed/')) {
+                return url;
+            } else if (url.includes('youtube.com/watch?v=')) {
+                return url.replace("https://www.youtube.com/watch?v=", "https://www.youtube.com/embed/");
+            } else if (url.includes('youtu.be/')) {
+                return url.replace("https://youtu.be/", "https://www.youtube.com/embed/");
+            }
+            return url;
+        }
+
+        // Function สร้าง movie cards อัตโนมัติจาก movieData
+        function renderMovieCards() {
+            const carouselInner = document.getElementById('carouselInner');
+            if (!carouselInner || !movieData || movieData.length === 0) {
+                console.error('Cannot render movie cards: carouselInner or movieData is missing');
+                return;
+            }
+
+            // ลบ cards เดิมทั้งหมด
+            carouselInner.innerHTML = '';
+
+            // สร้าง cards ใหม่จาก movieData
+            movieData.forEach((movie, index) => {
+                const card = document.createElement('div');
+                card.className = 'movie-card';
+                card.setAttribute('data-movie-id', movie.id);
+                card.setAttribute('data-movie-index', index); // เพิ่ม index สำหรับการค้นหา
+                if (index === currentMovieIndex) {
+                    card.classList.add('active'); // card ที่ active
+                }
+
+                const img = document.createElement('img');
+                img.src = movie.poster;
+                img.alt = `${movie.title} Poster`;
+
+                card.appendChild(img);
+                carouselInner.appendChild(card);
+            });
+
+            console.log(`Rendered ${movieData.length} movie cards`);
+        }
+
+        // Function setup carousel (event listeners และ arrows)
+        function setupCarousel() {
+            // Query movieCards ใหม่
+            movieCards = getMovieCards();
+
+            if (!movieCards || movieCards.length === 0) {
+                console.warn('No movie cards found for carousel setup');
+                return;
+            }
+
+            // ใช้ event delegation สำหรับ movie cards (ไม่ต้อง clone/replace)
+            const carouselInner = document.getElementById('carouselInner');
+            if (carouselInner) {
+                // ลบ event listener เดิม (ถ้ามี) โดยใช้ named function
+                if (carouselInner._cardClickHandler) {
+                    carouselInner.removeEventListener('click', carouselInner._cardClickHandler);
+                }
+
+                // สร้าง event handler ใหม่
+                carouselInner._cardClickHandler = (e) => {
+                    const card = e.target.closest('.movie-card');
+                    if (card) {
+                        const index = parseInt(card.getAttribute('data-movie-index'));
+                        if (!isNaN(index) && movieData[index]) {
+                            isProgrammaticScroll = true; // Set flag to prevent scroll handler interference
+                            currentMovieIndex = index;
+                            updateHeroBanner(movieData[currentMovieIndex]);
+                            setActiveMovieCard(currentMovieIndex);
+                            // Reset flag after scroll completes
+                            setTimeout(() => {
+                                isProgrammaticScroll = false;
+                            }, 500);
+                        }
+                    }
+                };
+
+                carouselInner.addEventListener('click', carouselInner._cardClickHandler);
+            }
+
+            // Setup carousel arrows
+            const leftArrow = document.getElementById('carouselLeftArrow');
+            const rightArrow = document.getElementById('carouselRightArrow');
+
+            if (leftArrow && rightArrow && movieCarousel && movieCards.length > 0) {
+                // ลบ event listeners เดิม (ถ้ามี)
+                if (leftArrow._clickHandler) {
+                    leftArrow.removeEventListener('click', leftArrow._clickHandler);
+                }
+                if (rightArrow._clickHandler) {
+                    rightArrow.removeEventListener('click', rightArrow._clickHandler);
+                }
+
+                const scrollStep = movieCards[0].offsetWidth + 20;
+
+                // สร้าง event handlers ใหม่
+                leftArrow._clickHandler = (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    isProgrammaticScroll = true;
+                    const currentScroll = movieCarousel.scrollLeft;
+                    const newScroll = Math.max(0, currentScroll - scrollStep);
+                    movieCarousel.scrollTo({
+                        left: newScroll,
+                        behavior: 'smooth'
+                    });
+                    setTimeout(() => {
+                        isProgrammaticScroll = false;
+                    }, 500);
+                };
+
+                rightArrow._clickHandler = (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    isProgrammaticScroll = true;
+                    const currentScroll = movieCarousel.scrollLeft;
+                    const maxScroll = movieCarousel.scrollWidth - movieCarousel.clientWidth;
+                    const newScroll = Math.min(maxScroll, currentScroll + scrollStep);
+                    movieCarousel.scrollTo({
+                        left: newScroll,
+                        behavior: 'smooth'
+                    });
+                    setTimeout(() => {
+                        isProgrammaticScroll = false;
+                    }, 500);
+                };
+
+                leftArrow.addEventListener('click', leftArrow._clickHandler);
+                rightArrow.addEventListener('click', rightArrow._clickHandler);
+            }
+
+            // Add scroll event listener to update active card
+            if (movieCarousel) {
+                // Remove old scroll handler if exists
+                if (movieCarousel._scrollHandler) {
+                    movieCarousel.removeEventListener('scroll', movieCarousel._scrollHandler);
+                }
+
+                let scrollTimeout;
+                movieCarousel._scrollHandler = () => {
+                    // Skip if this is a programmatic scroll (from card click or arrow)
+                    if (isProgrammaticScroll) return;
+
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(() => {
+                        const cards = getMovieCards();
+                        if (cards.length === 0) return;
+
+                        const carouselCenter = movieCarousel.scrollLeft + (movieCarousel.offsetWidth / 2);
+                        let closestCard = null;
+                        let closestDistance = Infinity;
+
+                        cards.forEach((card, index) => {
+                            const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+                            const distance = Math.abs(cardCenter - carouselCenter);
+                            if (distance < closestDistance) {
+                                closestDistance = distance;
+                                closestCard = { card, index };
+                            }
+                        });
+
+                        if (closestCard && closestCard.index !== currentMovieIndex) {
+                            currentMovieIndex = closestCard.index;
+                            updateHeroBanner(movieData[currentMovieIndex]);
+                            setActiveMovieCard(currentMovieIndex);
+                        }
+                    }, 150);
+                };
+
+                movieCarousel.addEventListener('scroll', movieCarousel._scrollHandler);
+            }
+
+            console.log('Carousel setup completed');
+        }
+
+        const movieData = [
+            {
+                id: 1,
+                title: "The Lord of the Rings: The Fellowship of the Ring",
+                year: "2001",
+                runtime: "2h 58min",
+                genre: "Fantasy, Adventure",
+                director: "Peter Jackson",
+                cast: "Elijah Wood, Ian McKellen, Viggo Mortensen",
+                synopsis: "Frodo Baggins ต้องเดินทางไปทำลายแหวนแห่งอำนาจที่ถูกสร้างโดย Sauron เพื่อป้องกันไม่ให้โลกมืดถูกปกครองโดยความชั่วร้าย ในการเดินทางครั้งนี้เขามีเพื่อนร่วมทางที่หลากหลายรวมถึงนักรบ, พ่อมด, และเอลฟ์",
+                background: "https://film-grab.com/wp-content/uploads/photo-gallery/30%20(643).jpg?bwg=1547229580",
+                poster: "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_.jpg",
+                trailer: "https://www.youtube.com/watch?v=V75dMMIW2B4",
+                imdbScore: "8.9",
+                rottenTomatoesScore: "92%"
+            },
+            {
+                id: 2,
+                title: "Star Wars",
+                year: "1977",
+                runtime: "2h 1min",
+                genre: "Fantasy, Adventure, Sci-Fi",
+                director: "George Lucas",
+                cast: "Mark Hamill, Harrison Ford, Carrie Fisher",
+                synopsis: "ในกาแล็กซี่ที่ห่างไกล Luke Skywalker หนุ่มน้อยที่ค้นพบว่าเขามีพลังพิเศษและต้องร่วมมือกับกลุ่มต่อต้านเพื่อสู้กับจักรวรรดิที่ชั่วร้ายและช่วยเจ้าหญิงเลอา",
+                background: "https://m.media-amazon.com/images/M/MV5BMjE1OTc1OTEwNl5BMl5BanBnXkFtZTgwMjg1NjQ1MDI@._V1_.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BOGUwMDk0Y2MtNjBlNi00NmRiLTk2MWYtMGMyMDlhYmI4ZDBjXkEyXkFqcGc@._V1_.jpg",
+                trailer: "https://www.youtube.com/watch?v=8k33taxQOwg",
+                imdbScore: "8.6",
+                rottenTomatoesScore: "94%"
+            },
+            {
+                id: 3,
+                title: "Avatar",
+                year: "2009",
+                runtime: "2h 42min",
+                genre: "Fantasy, Sci-Fi",
+                director: "James Cameron",
+                cast: "Sam Worthington, Zoe Saldana, Sigourney Weaver",
+                synopsis: "Jake Sully, อดีตนาวิกโยธินที่พิการ ต้องเดินทางไปยังดาวแพนดอร่าและเข้าร่วมกับชนเผ่าท้องถิ่น Na'vi เพื่อปกป้องโลกของพวกเขาจากการรุกรานของมนุษย์",
+                background: "https://m.media-amazon.com/images/M/MV5BNDQ1NjM4ODQyNl5BMl5BanBnXkFtZTcwNjc3MTUzNA@@._V1_.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=5PSNL1qE6VY",
+                imdbScore: "7.9",
+                rottenTomatoesScore: "81%"
+            },
+            {
+                id: 5,
+                title: "Harry Potter and the Deathly Hallows: Part 2",
+                year: "2011",
+                runtime: "2h 10min",
+                genre: "Fantasy, Adventure",
+                director: "David Yates",
+                cast: "Daniel Radcliffe, Emma Watson, Rupert Grint",
+                synopsis: "Harry, Ron, และ Hermione ต้องเผชิญหน้ากับ Voldemort ในการต่อสู้ครั้งสุดท้ายเพื่อปกป้องโลกเวทมนตร์และทำลาย Horcruxes ที่เหลืออยู่",
+                background: "https://m.media-amazon.com/images/M/MV5BMTUyNDU4NTgyN15BMl5BanBnXkFtZTcwNTQwMDY4NQ@@._V1_.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BOTA1Mzc2N2ItZWRiNS00MjQzLTlmZDQtMjU0NmY1YWRkMGQ4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=mObK5XD8udk",
+                imdbScore: "8.1",
+                rottenTomatoesScore: "96%"
+            },
+            {
+                id: 5,
+                title: "Pirates of the Caribbean: The Curse of the Black Pearl",
+                year: "2003",
+                runtime: "2h 23min",
+                genre: "Fantasy, Adventure",
+                director: "Gore Verbinski",
+                cast: "Johnny Depp, Orlando Bloom, Keira Knightley",
+                synopsis: "กัปตันแจ็ค สแปร์โรว์ ร่วมมือกับวิล เทิร์นเนอร์และเอลิซาเบธ สวอนน์ เพื่อหยุดยั้งคำสาปที่ทำให้ลูกเรือของกัปตันบาร์บอสซ่ากลายเป็นซอมบี้ในทะเล",
+                background: "https://film-grab.com/wp-content/uploads/photo-gallery/Pirates_of_the_Caribbean_031.jpg?bwg=1601292036",
+                poster: "https://m.media-amazon.com/images/M/MV5BNDhlMzEyNzItMTA5Mi00YWRhLThlNTktYTQyMTA0MDIyNDEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=naQr0uTrH_s",
+                imdbScore: "8.1",
+                rottenTomatoesScore: "79%"
+            },
+            {
+                id: 6,
+                title: "Spider-Man: No Way Home",
+                year: "2021",
+                runtime: "2h 28min",
+                genre: "Fantasy, Action, Superhero",
+                director: "Jon Watts",
+                cast: "Tom Holland, Zendaya, Benedict Cumberbatch",
+                synopsis: "Peter Parker ต้องเผชิญกับผลกระทบจากการเปิดเผยตัวตนของเขาในฐานะ Spider-Man และต้องร่วมมือกับ Doctor Strange เพื่อแก้ไขสถานการณ์ที่ซับซ้อนขึ้นเมื่อเหล่าวายร้ายจากจักรวาลอื่นเข้ามาในโลกของเขา",
+                background: "https://film-grab.com/wp-content/uploads/photo-gallery/SpiderManNoWayHome048.jpg?bwg=1651848635",
+                poster: "https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
+                trailer: "https://www.youtube.com/watch?v=rt-2cxAiPJk",
+                imdbScore: "8.2",
+                rottenTomatoesScore: "93%"
+            },
+            {
+                id: 7,
+                title: "Everything Everywhere All at Once",
+                year: "2022",
+                runtime: "2h 19min",
+                genre: "Fantasy, Sci-Fi",
+                director: "Daniel Kwan, Daniel Scheinert",
+                cast: "Michelle Yeoh, Stephanie Hsu, Ke Huy Quan",
+                synopsis: "Evelyn Wang หญิงชาวจีน-อเมริกันที่ต้องเผชิญกับความวุ่นวายในชีวิตประจำวันของเธอ เมื่อเธอถูกดึงเข้าสู่การผจญภัยข้ามมิติเวลาและต้องใช้พลังพิเศษเพื่อปกป้องโลกจากภัยคุกคามที่ไม่คาดคิด",
+                background: "https://m.media-amazon.com/images/M/MV5BYzM2MTgxOTYtMDg1OC00YmUxLTgyOGEtNmM3ZGJhOGRjZGJkXkEyXkFqcGc@._V1_.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BOWNmMzAzZmQtNDQ1NC00Nzk5LTkyMmUtNGI2N2NkOWM4MzEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=wxN1T1uxQ2g",
+                imdbScore: "7.8",
+                rottenTomatoesScore: "93%"
+            },
+            {
+                id: 9,
+                title: "Pan's Labyrinth",
+                year: "2006",
+                runtime: "1h 58min",
+                genre: "Fantasy, Drama",
+                director: "Guillermo del Toro",
+                cast: "Ivana Baquero, Sergi López, Maribel Verdú",
+                synopsis: "Ofelia เด็กผู้หญิงที่ย้ายไปอยู่กับแม่และพ่อเลี้ยงที่เป็นทหารในช่วงสงครามกลางเมืองสเปน เธอพบกับสิ่งมหัศจรรย์ในเขาวงกตและต้องทำภารกิจเพื่อพิสูจน์ว่าเธอเป็นเจ้าหญิงแห่งอาณาจักรใต้ดิน",
+                background: "https://m.media-amazon.com/images/M/MV5BYTc1NWYzZTYtNmY1MS00ZDgyLThmN2UtZTIxMjg0ZmZiNzI1XkEyXkFqcGc@._V1_.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BOTc1NTAxMWItMWFlNy00MmU2LTkwMTMtNzMwOTg5OTQ5YTFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=jVZRnnVSQ8k",
+                imdbScore: "8.2",
+                rottenTomatoesScore: "95%"
+            },
+            {
+                id: 6,
+                title: "The Hobbit: An Unexpected Journey",
+                year: "2012",
+                runtime: "2h 49min",
+                genre: "Fantasy, Adventure",
+                director: "Peter Jackson",
+                cast: "Martin Freeman, Ian McKellen, Richard Armitage",
+                synopsis: "Bilbo Baggins ถูกชักชวนโดย Gandalf ให้เข้าร่วมการผจญภัยกับกลุ่มคนแคระเพื่อช่วยพวกเขาในการยึดคืนอาณาจักร Erebor จากมังกร Smaug",
+                background: "https://m.media-amazon.com/images/M/MV5BMTY0MzAxNTA5Nl5BMl5BanBnXkFtZTcwNjM1Mzg3OA@@._V1_.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=SDnYMbYB-nU",
+                imdbScore: "7.8",
+                rottenTomatoesScore: "64%"
+            },
+            {
+                id: 10,
+                title: "Edward Scissorhands",
+                year: "1990",
+                runtime: "1h 45min",
+                genre: "Fantasy, Romance",
+                director: "Tim Burton",
+                cast: "Johnny Depp, Winona Ryder, Dianne Wiest",
+                synopsis: "Edward เป็นชายหนุ่มที่มีกรรไกรแทนมือ ซึ่งถูกสร้างขึ้นโดยนักประดิษฐ์ที่เสียชีวิตก่อนที่จะเสร็จสมบูรณ์ เขาถูกนำมาอยู่ในชุมชนชานเมืองและต้องเรียนรู้ที่จะใช้ชีวิตในโลกที่แตกต่างจากที่เขาเคยรู้จัก",
+                background: "https://m.media-amazon.com/images/M/MV5BNGE1MDQ0ODAtMWEwZS00MWNkLTg2N2YtZWMyOGIzZTVhYzEzXkEyXkFqcGc@._V1_.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BODJhODczYjUtYzdkMy00Yjc4LTllNWMtZTQ3MDZlYWZjYWEzXkEyXkFqcGc@._V1_.jpg",
+                trailer: "https://www.youtube.com/watch?v=TBHIO60whNw",
+                imdbScore: "7.8",
+                rottenTomatoesScore: "91%"
+            }
+        ];
+
+        openModalBtn.addEventListener('click', () => {
+            const currentTrailer = movieData[currentMovieIndex].trailer;
+            trailerIframe.src = convertToEmbedUrl(currentTrailer);
+            trailerModal.show();
+        });
+
+        trailerModalElement.addEventListener('hidden.bs.modal', () => {
+            trailerIframe.src = '';
+        });
+
+        function updateHeroBanner(movie) {
+            heroBackgroundImage.style.opacity = '0';
+            setTimeout(() => {
+                heroBackgroundImage.src = movie.background;
+                movieTitle.textContent = movie.title;
+                movieMetadata.innerHTML = `
+                    <span class="year">${movie.year}</span> 
+                    <span class="runtime">${movie.runtime}</span> 
+                    <span class="genre">${movie.genre}</span>
+                `;
+                synopsisHero.textContent = movie.synopsis;
+                document.getElementById('imdb-score').textContent = movie.imdbScore;
+                document.getElementById('rotten-tomatoes-score').textContent = movie.rottenTomatoesScore;
+                heroBackgroundImage.style.opacity = '1';
+            }, 300);
+        }
+
+        function setActiveMovieCard(index) {
+            const cards = getMovieCards(); // Query cards ใหม่ทุกครั้ง
+            cards.forEach((card, i) => {
+                card.classList.toggle('active', i === index);
+            });
+            const activeCard = cards[index];
+            if (activeCard && movieCarousel) {
+                isProgrammaticScroll = true; // Set flag before scrolling
+                const scrollOffset = activeCard.offsetLeft - (movieCarousel.offsetWidth / 2) + (activeCard.offsetWidth / 2);
+                movieCarousel.scroll({
+                    left: scrollOffset,
+                    behavior: 'smooth'
+                });
+                // Reset flag after scroll completes
+                setTimeout(() => {
+                    isProgrammaticScroll = false;
+                }, 500);
+            }
+        }
+
+        // สร้าง movie cards อัตโนมัติจาก movieData
+        renderMovieCards();
+
+        // Setup carousel (event listeners และ arrows)
+        setupCarousel();
+
+        // โหลดข้อมูลหนังเริ่มต้น
+        if (movieData.length > 0) {
+            // ตรวจสอบว่า currentMovieIndex ยังอยู่ใน range หรือไม่
+            if (currentMovieIndex >= movieData.length) {
+                currentMovieIndex = 0;
+            }
+            updateHeroBanner(movieData[currentMovieIndex]);
+            setActiveMovieCard(currentMovieIndex);
+        }
+
+        // Carousel navigation logic ถูกจัดการใน setupCarousel() แล้ว
+
+        const searchInput = document.getElementById('searchInput');
+        const searchForm = document.querySelector('.search-form');
+
+        function performSearch(searchTerm) {
+            if (!searchTerm || searchTerm.trim() === '') {
+                return false;
+            }
+            const term = searchTerm.trim().toLowerCase();
+            const foundMovie = movieData.find(movie =>
+                movie.title.toLowerCase().includes(term) ||
+                movie.genre.toLowerCase().includes(term) ||
+                movie.synopsis.toLowerCase().includes(term)
+            );
+            if (foundMovie) {
+                const movieIndex = movieData.findIndex(m => m.id === foundMovie.id);
+                if (movieIndex !== -1) {
+                    currentMovieIndex = movieIndex;
+                    updateHeroBanner(movieData[currentMovieIndex]);
+                    setActiveMovieCard(currentMovieIndex);
+                    setTimeout(() => {
+                        const cards = getMovieCards(); // Query cards ใหม่ทุกครั้ง
+                        const foundCard = cards[movieIndex];
+                        if (foundCard) {
+                            foundCard.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                        }
+                    }, 350);
+                }
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        if (searchForm && searchInput) {
+            searchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                if (searchTerm === '') {
+                    return;
+                }
+                const found = performSearch(searchTerm);
+                if (!found) {
+                    alert('ไม่พบหนังที่คุณค้นหา');
+                } else {
+                    const url = new URL(window.location);
+                    url.searchParams.delete('search');
+                    window.history.replaceState({}, '', url);
+                }
+            });
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchParam = urlParams.get('search');
+        if (searchParam) {
+            setTimeout(() => {
+                searchInput.value = searchParam;
+                const found = performSearch(searchParam);
+                if (!found) {
+                    alert('ไม่พบหนังที่คุณค้นหา');
+                }
+            }, 100);
+        }
+
+        // --- Person Modal Functionality ---
+        // Movie data for each person - generated from movieData
+        let personMoviesData = {};
+        
+        // Function to generate personMoviesData from movieData
+        function generatePersonMoviesData() {
+            personMoviesData = {};
+            if (movieData && movieData.length > 0) {
+                movieData.forEach(movie => {
+                    // Add director
+                    if (movie.director && movie.director !== 'ไม่ระบุ') {
+                        if (!personMoviesData[movie.director]) {
+                            personMoviesData[movie.director] = {
+                                type: 'director',
+                                movies: []
+                            };
+                        }
+                        personMoviesData[movie.director].movies.push({
+                            name: `${movie.title} (${movie.year})`,
+                            poster: movie.poster
+                        });
+                    }
+                    
+                    // Add cast
+                    if (movie.cast && movie.cast !== 'ไม่ระบุ') {
+                        const castNames = movie.cast.split(',').map(name => name.trim());
+                        castNames.forEach(actorName => {
+                            if (!personMoviesData[actorName]) {
+                                personMoviesData[actorName] = {
+                                    type: 'actor',
+                                    movies: []
+                                };
+                            }
+                            personMoviesData[actorName].movies.push({
+                                name: `${movie.title} (${movie.year})`,
+                                poster: movie.poster
+                            });
+                        });
+                    }
+                });
+            }
+        }
+        
+        // Generate personMoviesData after movieData is defined
+        generatePersonMoviesData();
+
+        // Store the previous modal ID
+        let previousModalId = null;
+
+        // Add click handlers to all clickable names
+        function setupClickableNames() {
+            const clickableNames = document.querySelectorAll('.clickable-name');
+
+            clickableNames.forEach(nameElement => {
+                // Skip if already has listener
+                if (nameElement.hasAttribute('data-listener-attached')) return;
+                nameElement.setAttribute('data-listener-attached', 'true');
+
+                nameElement.style.cursor = 'pointer';
+                nameElement.style.color = '#FFD700';
+                nameElement.style.textDecoration = 'underline';
+                nameElement.style.transition = 'color 0.3s';
+
+                nameElement.addEventListener('mouseenter', function () {
+                    this.style.color = '#FFA500';
+                });
+
+                nameElement.addEventListener('mouseleave', function () {
+                    this.style.color = '#FFD700';
+                });
+
+                nameElement.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const personName = this.getAttribute('data-person-name');
+                    const personType = this.getAttribute('data-person-type');
+
+                    // Store current modal ID
+                    const currentModal = document.querySelector('.modal.show');
+                    if (currentModal) {
+                        previousModalId = currentModal.id;
+                    }
+
+                    // Close all modals first
+                    const allModals = document.querySelectorAll('.modal.show');
+                    allModals.forEach(modal => {
+                        const modalInstance = bootstrap.Modal.getInstance(modal);
+                        if (modalInstance) {
+                            modalInstance.hide();
+                        }
+                    });
+
+                    // Wait for modal to close, then show person modal
+                    setTimeout(() => {
+                        showPersonModal(personName, personType);
+                    }, 300);
+                });
+            });
+        }
+
+        // Function to show person modal
+        function showPersonModal(personName, personType) {
+            // Regenerate data if needed
+            if (Object.keys(personMoviesData).length === 0) {
+                generatePersonMoviesData();
+            }
+            
+            const personData = personMoviesData[personName];
+            if (!personData) {
+                alert('ไม่พบข้อมูลของ ' + personName);
+                return;
+            }
+
+            const personModal = new bootstrap.Modal(document.getElementById('personModal'));
+            const modalTitle = document.getElementById('personModalTitle');
+            const moviesContainer = document.getElementById('personMoviesContainer');
+
+            // Set title
+            const titleText = personType === 'director' ? 'ผู้กำกับ: ' : 'นักแสดง: ';
+            modalTitle.textContent = titleText + personName;
+
+            // Clear previous content
+            moviesContainer.innerHTML = '';
+
+            // Create row for movies (3 per row)
+            const movies = personData.movies;
+            for (let i = 0; i < movies.length; i += 3) {
+                const row = document.createElement('div');
+                row.className = 'row g-3 mb-4';
+
+                for (let j = i; j < Math.min(i + 3, movies.length); j++) {
+                    const movie = movies[j];
+                    const col = document.createElement('div');
+                    col.className = 'col-md-4';
+
+                    const movieCard = document.createElement('div');
+                    movieCard.className = 'person-movie-card';
+
+                    const img = document.createElement('img');
+                    img.src = movie.poster;
+                    img.alt = movie.name;
+                    img.className = 'person-movie-poster';
+                    img.style.width = '100%';
+                    img.style.height = '450px';
+                    img.style.objectFit = 'cover';
+                    img.style.display = 'block';
+                    img.style.visibility = 'visible';
+                    img.style.opacity = '1';
+
+                    const title = document.createElement('div');
+                    title.className = 'person-movie-title';
+                    title.textContent = movie.name;
+                    title.style.color = '#fff';
+                    title.style.visibility = 'visible';
+                    title.style.opacity = '1';
+                    title.style.display = 'flex';
+
+                    movieCard.appendChild(img);
+                    movieCard.appendChild(title);
+                    col.appendChild(movieCard);
+                    row.appendChild(col);
+                }
+
+                moviesContainer.appendChild(row);
+            }
+
+            // Apply styles to ensure they are applied
+            const modalContent = document.querySelector('#personModal .modal-content');
+            if (modalContent) {
+                modalContent.style.background = 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 25%, #2a2a2a 50%, #1a1a1a 75%, #0f0f0f 100%)';
+                modalContent.style.border = '3px solid #FFD700';
+                modalContent.style.borderRadius = '20px';
+                modalContent.style.color = '#fff';
+            }
+            
+            // Show modal
+            personModal.show();
+        }
+
+        // Setup clickable names on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            setupClickableNames();
+
+            // Re-setup when moreInfoModal is shown
+            const moreInfoModalElement = document.getElementById('moreInfoModal');
+            if (moreInfoModalElement) {
+                moreInfoModalElement.addEventListener('shown.bs.modal', function () {
+                    setTimeout(setupClickableNames, 100);
+                });
+            }
+        });
+
+        // Back button handler
+        const backBtn = document.getElementById('backToMovieModal');
+        if (backBtn) {
+            backBtn.addEventListener('click', function () {
+                const personModal = bootstrap.Modal.getInstance(document.getElementById('personModal'));
+                if (personModal) {
+                    personModal.hide();
+                }
+
+                // Show previous modal if exists
+                if (previousModalId) {
+                    setTimeout(() => {
+                        const prevModal = new bootstrap.Modal(document.getElementById(previousModalId));
+                        prevModal.show();
+                    }, 300);
+                }
+            });
+        }
+    </script>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 รีวิวหนัง. สงวนลิขสิทธิ์</p>
+        </div>
+    </footer>
+</body>
+
+</html>

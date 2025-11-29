@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Movie Reviews</title>
+</head>
+
+<body style="background-color: black;">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark site-header">
+    <div class="container-fluid">
+
+      <a class="navbar-brand logo" href="index.html">
+        <img src="img/LOGO/SPU.png" alt="LOGO" class="mark">
+        <div><strong>MOVIEREVIEWS</strong>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarMenu"
+        aria-controls="mainNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="mainNavbarMenu" class="collapse navbar-collapse">
+        <form class="d-flex me-3 search-form" role="search" id="navbarSearchForm">
+          <div class="input-group">
+            <input class="form-control" type="search" placeholder="ค้นหาหนัง..." aria-label="Search" id="searchInput">
+            <button class="btn btn-outline-warning" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+            </button>
+          </div>
+        </form>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active" aria-current="page">HOME</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" id="movieDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              TOP 10 MOVIE
+            </a>
+            <ul class="dropdown-menu " aria-labelledby="movieDropdown">
+              <li><a class="dropdown-item" href="M_Action.html">Action</a></li>
+              <li><a class="dropdown-item" href="M_Comedy.html">Comedy</a></li>
+              <li><a class="dropdown-item" href="M_Drama.html">Drama</a></li>
+              <li><a class="dropdown-item" href="M_Horror.html">Horror</a></li>
+              <li><a class="dropdown-item" href="M_Romance.html">Romance</a></li>
+              <li><a class="dropdown-item" href="M_Fantasy.html">Fantasy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" id="movieDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              TOP 10 TV SHOW
+            </a>
+            <ul class="dropdown-menu " aria-labelledby="movieDropdown">
+              <li><a class="dropdown-item" href="TV_Action.html">Action</a></li>
+              <li><a class="dropdown-item" href="TV_Comedy.html">Comedy</a></li>
+              <li><a class="dropdown-item" href="TV_Drama.html">Drama</a></li>
+              <li><a class="dropdown-item" href="TV_Horror.html">Horror</a></li>
+              <li><a class="dropdown-item" href="TV_Romance.html">Romance</a></li>
+              <li><a class="dropdown-item" href="TV_Fantasy.html">Fantasy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="Oscar.html" class="nav-link">OSCAR WINNERS</a>
+          </li>
+          <li class="nav-item">
+            <a href="Aboutus.html" class="nav-link">ABOUT US</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <section id="slider" class="mb-5">
+    <div class="carousel slide" data-bs-ride="carousel" id="mySlider">
+      <div class="carousel-inner">
+        <div class="carousel-item active"
+          style="height: 400px; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://s359.kapook.com/pagebuilder/6552ac2a-d51b-4b09-afb5-95d4043e4c63.jpg'); background-size: cover; background-position: center;">
+          <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="text-center text-white">
+              <h1 class="display-3 fw-bold" style="text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">Welcome to Movie Reviews
+              </h1>
+              <p class="lead">แหล่งรวมภาพยนตร์ที่น่าสนใจ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mb-5">
+
+    <div class="text-center mb-5">
+      <h2 class="oscar-section-title">MOVIE</h2>
+      <p class="oscar-section-subtitle">รีวิวภาพยนตร์ล่าสุดและยอดนิยม</p>
+
+      <div class="filter-btn-group mt-4" id="filterContainer">
+        <button class="btn btn-outline-light active" data-filter="all">ทั้งหมด</button>
+        <button class="btn btn-outline-light" data-filter="2025">2025</button>
+        <button class="btn btn-outline-light" data-filter="2024">2024</button>
+        <button class="btn btn-outline-light" data-filter="2023">2023</button>
+        <button class="btn btn-outline-light" data-filter="2022">2022</button>
+        <button class="btn btn-outline-light" data-filter="2021">2021</button>
+        <button class="btn btn-outline-light" data-filter="2020">2020</button>
+        <button class="btn btn-outline-light" data-filter="2019">2019</button>
+        <button class="btn btn-outline-light" data-filter="2018">2018</button>
+        <button class="btn btn-outline-light" data-filter="2017">2017</button>
+        <button class="btn btn-outline-light" data-filter="2016">2016</button>
+      </div>
+    </div>
+
+    <div class="row g-4" id="reviewsGrid">
+    </div>
+
+    <div id="modalsContainer"></div>
+
+  </div>
+
+  <div class="container-fluid bg-dark text-white py-5 mt-5">
+    <div class="container text-center">
+      <h2 class="text-warning mb-4" style="font-family: 'Playfair Display', serif;">เกี่ยวกับเรา</h2>
+      <p class="mx-auto" style="max-width: 700px; color: #ccc;">
+        เว็บไซต์รีวิวภาพยนตร์ที่รวบรวมรีวิวจากผู้ชมและนักวิจารณ์มืออาชีพ
+        เรามุ่งมั่นที่จะให้ข้อมูลที่เป็นประโยชน์และช่วยให้คุณเลือกภาพยนตร์ที่เหมาะกับคุณ
+      </p>
+    </div>
+  </div>
+
+  <footer class="text-center py-4" style="background-color: #000; color: #555; border-top: 1px solid #222;">
+    <p class="mb-0">&copy; 2024 รีวิวหนัง (Movie Reviews). สงวนลิขสิทธิ์</p>
+  </footer>
+
+  <script>
+    // --- Movie Data ---
+    const movies = [
+      // --- 2025 (Anticipated / New Release) ---
+      {
+        id: 2501,
+        title: "How to Train Your Dragon",
+        genre: "action",
+        rating: 4.3,
+        description: "เรื่องราวของฮิคคัพ หนุ่มไวกิ้งผู้ไม่เข้าพวกซึ่งแตกต่างจากชาวเผ่าที่มักสู้รบกับมังกร ฮิคคัพได้พบและผูกมิตรกับมังกรบาดเจ็บชื่อเขี้ยวกุด ซึ่งทำให้เขาได้เรียนรู้ว่ามังกรไม่ได้เป็นศัตรูอย่างที่คิด และนำไปสู่การเปลี่ยนแปลงครั้งใหญ่ที่ทำให้ชาวไวกิ้งและมังกรสามารถอยู่ร่วมกันอย่างสันติได้",
+        poster: "https://m.media-amazon.com/images/M/MV5BODA5Y2M0NjctNWQzMy00ODRhLWE0MzUtYmE1YTAzZjYyYmQyXkEyXkFqcGc@._V1_.jpg",
+        year: "2025"
+      },
+      {
+        id: 2502,
+        title: "Superman: Legacy",
+        genre: "action",
+        rating: 4.8,
+        description: "ซูเปอร์แมนต้องปรับสมดุลระหว่างมรดกทางเชื้อชาติคริปโตเนียนต่างดาวของเขากับการเติบโตเป็นมนุษย์ในฐานะนักข่าวคลาร์ก เคนท์ ในฐานะศูนย์รวมแห่งความจริง ความยุติธรรม และวิถีของมนุษย์ เขาพบว่าตัวเองอยู่ในโลกที่มองว่าสิ่งเหล่านี้ล้าสมัย",
+        poster: "https://m.media-amazon.com/images/M/MV5BOGMwZGJiM2EtMzEwZC00YTYzLWIxNzYtMmJmZWNlZjgxZTMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        year: "2025"
+      },
+      {
+        id: 2503,
+        title: "Mickey 17",
+        genre: "sci-fi",
+        rating: 4.7,
+        description: "ระหว่างภารกิจสำรวจอาณานิคมในอวกาศ มิกกี้ 17 พนักงานที่ถูกเรียกว่า ส่วนเกิน ถูกส่งไปสำรวจดาวเคราะห์น้ำแข็ง",
+        poster: "https://m.media-amazon.com/images/M/MV5BZGQwYmEzMzktYzBmMy00NmVmLTkyYTUtOTYyZjliZDNhZGVkXkEyXkFqcGc@._V1_.jpg",
+        year: "2025"
+      },
+      {
+        id: 2504,
+        title: "Mission: Impossible 8",
+        genre: "action",
+        rating: 4.9,
+        description: "ฮันท์และ IMF ออกตามล่า AI อันตรายที่ชื่อว่า Entity ซึ่งแทรกซึมเข้าไปในหน่วยข่าวกรองระดับโลก โดยมีรัฐบาลและบุคคลสำคัญในอดีตคอยติดตาม ฮันท์จึงเร่งรีบหยุดยั้งไม่ให้มันเปลี่ยนแปลงโลกไปตลอดกาล",
+        poster: "https://f.ptcdn.info/062/088/000/mawt5tvjiXA7o331g9N-o.jpg",
+        year: "2025"
+      },
+      {
+        id: 2505,
+        title: "The Fantastic Four",
+        genre: "action",
+        rating: 4.5,
+        description: "Fantastic Four ถูกบังคับให้ต้องรักษาสมดุลระหว่างบทบาทฮีโร่กับความผูกพันในครอบครัว พวกเขาจึงต้องปกป้องโลกจากเทพแห่งอวกาศผู้หิวโหยที่เรียกว่ากาแลคตัสและทูตผู้ลึกลับของเขาอย่างซิลเวอร์เซิร์ฟเฟอร์",
+        poster: "https://m.media-amazon.com/images/M/MV5BOGM5MzA3MDAtYmEwMi00ZDNiLTg4MDgtMTZjOTc0ZGMyNTIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        year: "2025"
+      },
+
+      // --- 2024 ---
+      {
+        id: 2401,
+        title: "Dune: Part Two",
+        genre: "sci-fi",
+        rating: 4.9,
+        description: "พอล อะเทรดีส ต้องรวมกลุ่มกับชาวเฟรเมนเพื่อแก้แค้นและทวงบัลลังก์คืน โดยเขาต้องเลือกระหว่างความรักที่มีต่อชานีกับชะตากรรมของจักรวาลที่เขาพยายามป้องกันไม่ให้เกิดขึ้น เรื่องราวจะพาเขาไปพิสูจน์ตัวเองในฐานะผู้นำของชาวเฟรเมน และต่อสู้กับตระกูลฮาร์คอนเนนซึ่งเป็นศัตรูเก่าที่ทำลายครอบครัวของเขา ",
+        poster: "https://m.media-amazon.com/images/M/MV5BN2QyZGU4ZDctOWMzMy00NTc5LThlOGQtODhmNDI1NmY5YzAwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg",
+        year: "2024"
+      },
+      {
+        id: 2402,
+        title: "Deadpool & Wolverine",
+        genre: "action",
+        rating: 4.8,
+        description: "เวด วิลสัน (เดดพูล) ที่เลิกเป็นฮีโร่แล้วต้องกลับมาสวมชุดอีกครั้งเมื่อโลกของเขากำลังตกอยู่ในอันตราย เขาถูกชักชวนจากองค์กร Time Variance Authority (TVA) ให้ช่วยปกป้องมัลติเวิร์ส ซึ่งทำให้เขาต้องไปดึงตัววูล์ฟเวอรีนที่กำลังใช้ชีวิตอย่างโดดเดี่ยวและเศร้าสร้อยมาช่วยทำภารกิจครั้งนี้ ",
+        poster: "https://cdn.marvel.com/content/1x/dp3_1sht_digital_srgb_ka_swords_v5_resized.jpg",
+        year: "2024"
+      },
+      {
+        id: 2403,
+        title: "Inside Out 2",
+        genre: "comedy",
+        rating: 4.7,
+        description: "การกลับมาสู่โลกภายในจิตใจของ ไรลีย์ ในช่วงวัยรุ่น ซึ่งเป็นช่วงที่เต็มไปด้วยความเปลี่ยนแปลงครั้งใหญ่ เมื่อสำนักงานใหญ่ของอารมณ์ถูกรื้อถอนเพื่อเปิดทางให้อารมณ์ใหม่ๆ อย่าง วิตกกังวล, อิจฉา, เขินอาย, และ เบื่อหน่าย เข้ามา ซึ่งทำให้อารมณ์ดั้งเดิมอย่าง ลั้ลลา และเพื่อนๆ ต้องพยายามทำความเข้าใจและปรับตัวกับอารมณ์ใหม่เหล่านี้ และความสับสนที่เกิดขึ้น ",
+        poster: "https://m.media-amazon.com/images/M/MV5BYWY3MDE2Y2UtOTE3Zi00MGUzLTg2MTItZjE1ZWVkMGVlODRmXkEyXkFqcGc@._V1_.jpg",
+        year: "2024"
+      },
+      {
+        id: 2404,
+        title: "Furiosa: A Mad Max Saga",
+        genre: "action",
+        rating: 4.6,
+        description: "เรื่องราวการเดินทางของ ฟูริโอซ่า ตั้งแต่ยังเด็กที่ถูกลักพาตัวไปจากบ้านอันอุดมสมบูรณ์อย่าง กรีนเพลซ โดยกลุ่มไบค์เกอร์ฮอร์ดที่นำโดย ดีเมนทัส จอมวายร้าย เธอต้องเอาชีวิตรอดในโลกอันโหดร้ายและต้องเผชิญหน้ากับอำนาจของ อิมมอร์ทัล โจ ที่พยายามช่วงชิงอำนาจกับดีเมนทัส ระหว่างที่อยู่ภายใต้อิทธิพลของพวกเขากว่าทศวรรษ เธอพยายามหาทางกลับบ้านและแก้แค้น ",
+        poster: "https://m.media-amazon.com/images/M/MV5BNTcwYWE1NTYtOWNiYy00NzY3LWIwY2MtNjJmZDkxNDNmOWE1XkEyXkFqcGc@._V1_.jpg",
+        year: "2024"
+      },
+      {
+        id: 2405,
+        title: "Civil War",
+        genre: "action",
+        rating: 4.5,
+        description: "การเดินทางสุดอันตรายของกลุ่มนักข่าว 4 คน ที่ต้องบุกเข้าไปในกรุงวอชิงตัน ดี.ซี. ท่ามกลางสงครามกลางเมืองในสหรัฐอเมริกาที่กำลังทวีความรุนแรงขึ้น เพื่อสัมภาษณ์ประธานาธิบดีก่อนที่กองกำลังกบฏตะวันตกจะโค่นล้มอำนาจได้สำเร็จ",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_.jpg",
+        year: "2024"
+      },
+
+      // --- 2023 ---
+      {
+        id: 2301,
+        title: "Oppenheimer",
+        genre: "drama",
+        rating: 4.9,
+        description: "เป็นเรื่องราวชีวประวัติของ เจ. โรเบิร์ต ออพเพนไฮเมอร์ (J. Robert Oppenheimer) นักฟิสิกส์ผู้มีฉายาว่า บิดาแห่งระเบิดปรมาณู โดยเล่าถึงบทบาทสำคัญของเขาในการเป็นผู้นำ โครงการแมนฮัตตัน ซึ่งเป็นโครงการลับสุดยอดของสหรัฐอเมริกาในช่วงสงครามโลกครั้งที่สอง เพื่อสร้างระเบิดปรมาณู",
+        poster: "https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_FMjpg_UX1000_.jpg",
+        year: "2023"
+      },
+      {
+        id: 2302,
+        title: "Barbie",
+        genre: "comedy",
+        rating: 4.6,
+        description: "การเดินทางของบาร์บี้ (มาร์โกต์ ร็อบบี้) และเคน (ไรอัน กอสลิ่ง) ที่ต้องออกจากบาร์บี้แลนด์อันสมบูรณ์แบบเพื่อเดินทางสู่โลกแห่งความเป็นจริง การผจญภัยครั้งนี้เริ่มต้นขึ้นเมื่อบาร์บี้เริ่มมีความคิดและความรู้สึกแปลกๆ เช่น การนึกถึงความตาย ซึ่งเป็นเรื่องที่ไม่เคยเกิดขึ้นมาก่อนในบาร์บี้แลนด์ การเดินทางของทั้งคู่ทำให้พวกเขาได้พบกับความสุข ความตื่นเต้น และอันตรายที่แตกต่างจากการใช้ชีวิตในโลกมนุษย์ ซึ่งท้ายที่สุดแล้วนำไปสู่การค้นพบความหมายของชีวิตและการตระหนักถึงคุณค่าในตัวเองที่มากกว่าแค่รูปลักษณ์ภายนอก ",
+        poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg",
+        year: "2023"
+      },
+      {
+        id: 2303,
+        title: "John Wick: Chapter 4",
+        genre: "action",
+        rating: 4.8,
+        description: "การต่อสู้ครั้งสุดท้ายของจอห์น วิค เพื่อปลดแอกตัวเองจากสภาสูง (High Table) โดยต้องเผชิญหน้ากับศัตรูที่แข็งแกร่งอย่าง มาร์กีส์ เดอ กรามองต์ ผู้เป็นตัวแทนของสภาสูง และ เคน นักฆ่าตาบอดผู้เป็นอดีตเพื่อน จุดมุ่งหมายของจอห์นคือการมีชีวิตอันสงบสุข จึงเลือกที่จะดวลปืนกับมาร์กีส์",
+        poster: "https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_FMjpg_UX1000_.jpg",
+        year: "2023"
+      },
+      {
+        id: 2304,
+        title: "Spider-Man: Across the Spider-Verse",
+        genre: "action",
+        rating: 4.9,
+        description: "ไมลส์ มอราลเลส กลับมาพบกับ เกว็น สเตซี่ และถูกดึงเข้าไปสู่ สไปเดอร์-โซไซตี้ ซึ่งเป็นกลุ่มสไปเดอร์แมนจากหลากหลายจักรวาลที่นำโดย มิเกล โอฮาร่า (Spider-Man 2099) ที่มีภารกิจต้องรักษา เส้นเรื่องหลัก ของแต่ละจักรวาล แต่เมื่อไมลส์รู้ว่าการกระทำของเขาอาจนำไปสู่ความสูญเสียของคนที่เขารัก เขาจึงตัดสินใจขัดขืน ทำให้เกิดความขัดแย้งกับเหล่าสไปเดอร์แมน และต้องหาทางนิยามใหม่ของการเป็นซูเปอร์ฮีโร่ในแบบของตัวเอง ",
+        poster: "https://m.media-amazon.com/images/M/MV5BNThiZjA3MjItZGY5Ni00ZmJhLWEwN2EtOTBlYTA4Y2E0M2ZmXkEyXkFqcGc@._V1_.jpg",
+        year: "2023"
+      },
+      {
+        id: 2305,
+        title: "Godzilla Minus One",
+        genre: "horror",
+        rating: 4.8,
+        description: "เรื่องราวของประเทศญี่ปุ่นที่ตกอยู่ในสภาพย่ำแย่หลังสงครามโลกครั้งที่ 2 แต่กลับต้องเผชิญหน้ากับหายนะครั้งใหญ่ยิ่งกว่า เมื่อก็อดซิลล่า สัตว์ประหลาดกลายพันธุ์พลังนิวเคลียร์ ปรากฏตัวขึ้นสร้างความพินาศ ท่ามกลางความสิ้นหวังนี้ อดีตนักบินที่รอดชีวิตจากสงครามได้ร่วมมือกับกลุ่มคนอื่น ๆ เพื่อรวมพลังกันต่อสู้กับอสูรกายยักษ์ตัวนี้ ",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjc5MjllMGUtMDIwMS00ZDVkLWEzODQtM2NlMTMwMTZhNThmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        year: "2023"
+      },
+
+      // --- 2022 ---
+      {
+        id: 2201,
+        title: "Top Gun: Maverick",
+        genre: "action",
+        rating: 4.9,
+        description: "พีท มาเวอริค มิทเชลล์ (ทอม ครูซ) กลับมารับตำแหน่งครูฝึกของหน่วยท็อปกันเพื่อฝึกนักบินรุ่นใหม่สำหรับภารกิจพิเศษที่อันตรายอย่างยิ่ง ในระหว่างนั้น เขาต้องเผชิญหน้ากับอดีตที่หลอกหลอน เมื่อเขาต้องฝึก เรือโทแบรดลีย์ แบรดชอว์ (ไมล์ เทลเลอร์) หรือ รูสเตอร์ ซึ่งเป็นลูกชายของ กูส เพื่อนสนิทที่เสียชีวิตไป ภารกิจนี้ต้องใช้ความกล้าหาญและการเสียสละอย่างที่สุดจากผู้ที่ได้รับเลือก  ",
+        poster: "https://lofficielthailand.com/wp-content/uploads/2022/04/1650968629-top-gun-poster-maverick-cannes-2022.jpg",
+        year: "2022"
+      },
+      {
+        id: 2202,
+        title: "Everything Everywhere All at Once",
+        genre: "sci-fi",
+        rating: 4.8,
+        description: "เล่าถึง เอเวอลีน หวัง หญิงชาวจีนอเมริกันที่ชีวิตยุ่งเหยิงทั้งเรื่องธุรกิจร้านซักแห้งที่กำลังมีปัญหาและความสัมพันธ์กับคนในครอบครัว วันหนึ่งเธอได้ค้นพบว่าตัวเองต้องเดินทางข้ามมิติไปยังพหุจักรวาล เพื่อต่อสู้กับศัตรูลึกลับที่ต้องการทำลายทุกจักรวาล เธอต้องเรียนรู้ที่จะดึงพลังและความสามารถจากตัวตนอื่น ๆ ในจักรวาลคู่ขนานมาใช้ เพื่อช่วยเหลือโลกและครอบครัวของเธอ ",
+        poster: "https://m.media-amazon.com/images/M/MV5BOWNmMzAzZmQtNDQ1NC00Nzk5LTkyMmUtNGI2N2NkOWM4MzEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        year: "2022"
+      },
+      {
+        id: 2203,
+        title: "The Batman",
+        genre: "action",
+        rating: 4.7,
+        description: "เล่าเรื่องราวของแบทแมนที่กำลังต่อสู้กับอาชญากรรมเป็นปีที่สองในก็อตแธม โดยต้องเผชิญหน้ากับ เดอะริดเลอร์ นักฆ่าโรคจิตที่กำลังวางแผนทำลายเมือง แบทแมนพบเบาะแสปริศนาในที่เกิดเหตุฆาตกรรมผู้นำระดับสูงของเมือง ซึ่งนำเขาไปสู่การเปิดโปงแผนสมคบคิดที่โยงใยกับอดีตของตระกูลเวย์น ",
+        poster: "https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_FMjpg_UX1000_.jpg",
+        year: "2022"
+      },
+      {
+        id: 2204,
+        title: "Avatar: The Way of Water",
+        genre: "sci-fi",
+        rating: 4.8,
+        description: "การผจญภัยของครอบครัวซัลลีบนดาวแพนดอร่า ที่ต้องเผชิญกับภัยคุกคามใหม่จากอดีตของเจค ซัลลี ทำให้พวกเขาต้องอพยพหนีออกจากบ้านไปหาชนเผ่านาวีกลุ่มใหม่ที่อาศัยอยู่ริมทะเล ครอบครัวนี้จึงต้องเรียนรู้วิถีชีวิตใหม่เพื่อเอาชีวิตรอดและปกป้องครอบครัวจากอันตรายที่ตามมา ",
+        poster: "https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_FMjpg_UX1000_.jpg",
+        year: "2022"
+      },
+      {
+        id: 2205,
+        title: "The Whale",
+        genre: "drama",
+        rating: 4.7,
+        description: "เรื่องราวของ ชาร์ลี ครูสอนภาษาอังกฤษออนไลน์ผู้ป่วยเป็นโรคอ้วนขั้นรุนแรง ซึ่งใช้ชีวิตอย่างโดดเดี่ยวและจำกัดตัวเองอยู่แต่ในบ้าน ด้วยโรคประจำตัวที่ทำให้อายุขัยสั้นลง เขาจึงต้องการกลับไปหา เอลลี่ ลูกสาววัยรุ่นที่ห่างเหินกันไปนาน เพื่อพยายามแก้ไขความสัมพันธ์ที่ร้าวฉานก่อนที่ทุกอย่างจะสายเกินไป ในช่วงเวลาสุดท้ายของชีวิต ชาร์ลีพยายามทำทุกอย่างเพื่อกลับไปเป็นพ่อที่ดีให้ลูกได้เห็น",
+        poster: "https://m.media-amazon.com/images/M/MV5BYmNhOWMyNTYtNTljNC00NTU3LWFiYmQtMDBhOGU5NWFhNGU5XkEyXkFqcGc@._V1_.jpg",
+        year: "2022"
+      },
+
+      // --- 2021 ---
+      {
+        id: 2101,
+        title: "Spider-Man: No Way Home",
+        genre: "action",
+        rating: 4.9,
+        description: "เมื่อตัวตนที่แท้จริงของสไปเดอร์แมน (ปีเตอร์ ปาร์คเกอร์) ถูกเปิดเผยต่อสาธารณชนและส่งผลกระทบต่อชีวิตของเขา ปีเตอร์จึงขอให้ ดร.สเตรนจ์ ใช้เวทมนตร์ลบความทรงจำของผู้คน แต่ความผิดพลาดในการร่ายมนต์ทำให้เกิดความวุ่นวายข้ามจักรวาล ซึ่งเปิดทางให้ตัวร้ายจากจักรวาลอื่น ๆ เดินทางมายังโลกปัจจุบัน ทำให้ปีเตอร์ต้องเผชิญหน้ากับเหล่าร้ายและหาทางแก้ไขเหตุการณ์ที่เกิดขึ้นเพื่อปกป้องทุกคน ",
+        poster: "https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
+        year: "2021"
+      },
+      {
+        id: 2102,
+        title: "Dune",
+        genre: "sci-fi",
+        rating: 4.7,
+        description: "เรื่องราวเริ่มต้นเมื่อ ดยุกเลโท อะเทรดีส ผู้นำตระกูลอะเทรดีส ได้รับคำสั่งจากจักรพรรดิให้ย้ายไปปกครอง ดาวอาร์ราคิส (Arrakis) หรือที่รู้จักในชื่อ ดูน (Dune) ดาวเคราะห์ทะเลทรายแห่งนี้เป็นแหล่งผลิตทรัพยากรที่ล้ำค่าและสำคัญที่สุดในจักรวาล นั่นคือ สไปซ์ (Spice Melange) ซึ่งเป็นสารที่ช่วยยืดอายุชีวิต มอบพลังจิต และจำเป็นอย่างยิ่งสำหรับการเดินทางข้ามอวกาศ",
+        poster: "https://m.media-amazon.com/images/I/61QbqeCVm0L.jpg",
+        year: "2021"
+      },
+      {
+        id: 2103,
+        title: "CODA",
+        genre: "drama",
+        rating: 4.8,
+        description: "เป็นเรื่องราวของ รูบี้ เด็กสาวที่หูดีเพียงคนเดียวในครอบครัวที่พ่อแม่และพี่ชายหูหนวก เธอต้องทำหน้าที่เป็นล่ามและผู้ช่วยงานประมงของครอบครัว วันหนึ่งเธอค้นพบพรสวรรค์ด้านการร้องเพลงเมื่อสมัครเข้าชมรมประสานเสียง ทำให้ต้องเผชิญทางเลือกระหว่างการตามความฝันทางดนตรี หรืออยู่กับครอบครัวที่ต้องการเธอในโลกที่ไร้เสียง ",
+        poster: "https://m.media-amazon.com/images/M/MV5BNzIzOTNjOTQtM2QzOC00NjFlLTljZDUtZmI4Yjg1YTkyMTBiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        year: "2021"
+      },
+      {
+        id: 2104,
+        title: "Shang-Chi",
+        genre: "action",
+        rating: 4.5,
+        description: "ชาง-ชี ปรมาจารย์กังฟู ต้องเผชิญหน้ากับอดีตอันซับซ้อนเมื่อพ่อของเขา, เหวินหวู่ ผู้นำองค์กรลับ สิบแหวน, บังคับให้เขากลับไปสู่เส้นทางนักฆ่า. หลังจากหลบหนีมาใช้ชีวิตอย่างสันโดษในซานฟรานซิสโก ชาง-ชีต้องเดินทางไปพร้อมกับเคธี่เพื่อนสนิทเพื่อปกป้องเซียหลิงน้องสาวของเขาที่ถูกพ่อตามล่า. การเดินทางนำไปสู่การเปิดโปงความลับของหมู่บ้านต้าโหลวอันลึกลับ และการเผชิญหน้ากับพลังอำนาจที่เขาเคยหนีมาตลอด. สุดท้ายชาง-ชีต้องใช้พลังของเขาเพื่อต่อสู้กับบิดาและกลุ่มอสูรที่พ่อปลดปล่อยออกมา",
+        poster: "https://m.media-amazon.com/images/M/MV5BZmY5MDcyNzAtYzg3MC00MGNlLTg3OGItNmRjYThkZGVlNzAyXkEyXkFqcGc@._V1_.jpg",
+        year: "2021"
+      },
+      {
+        id: 2105,
+        title: "Don't Look Up",
+        genre: "comedy",
+        rating: 4.4,
+        description: "เคท ดิบิอัสกี (เจนนิเฟอร์ ลอว์เรนซ์) นักศึกษาระดับปริญญาเอกสาขาดาราศาสตร์ และ ดร. แรนดัล มินดี (ลีโอนาร์โด ดิคาปริโอ) ศาสตราจารย์ที่ปรึกษา ได้ค้นพบดาวหางขนาดใหญ่ที่กำลังโคจรมาในเส้นทางพุ่งชนโลกโดยตรง ซึ่งจะทำลายล้างทุกสิ่งบนโลกภายในเวลาประมาณ 6 เดือน",
+        poster: "https://m.media-amazon.com/images/M/MV5BOTY2NzFjODctOWUzMC00MGZhLTlhNjMtM2Y2ODBiNGY1ZWRiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg",
+        year: "2021"
+      },
+
+      // --- 2020 ---
+      {
+        id: 2001,
+        title: "Tenet",
+        genre: "sci-fi",
+        rating: 4.5,
+        description: "สายลับนิรนาม (ตัวเอก) ต้องร่วมมือกับ นีล (โรเบิร์ต แพตทินสัน) ในการต่อสู้เพื่อปกป้องโลก โดยใช้เทคโนโลยีที่ชื่อว่า การย้อนเวลา (Inversion) เพื่อหยุดยั้ง มหาเศรษฐีชาวรัสเซียที่ชั่วร้ายชื่อ ซาเตอร์ ซึ่งวางแผนทำสงครามโลกครั้งที่ 3 โดยอาศัยการหยั่งรู้อนาคต",
+        poster: "https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_FMjpg_UX1000_.jpg",
+        year: "2020"
+      },
+      {
+        id: 2002,
+        title: "Soul",
+        genre: "comedy",
+        rating: 4.8,
+        description: "Soul เล่าเรื่องของ Joe Gardner (Jamie Foxx) ครูสอนดนตรีวัยกลางคน ผู้เบื่อหน่ายในชีวิตและยังคงพยายามไขว่คว้าความฝันการเป็นนักดนตรีแจ๊สชื่อดังเหมือนพ่อ ที่จู่ ๆ ก็ประสบอุบัติเหตุตายทั้งที่เขากำลังได้โอกาสเริ่มต้นเส้นทางใหม่ของชีวิต",
+        poster: "https://image.tmdb.org/t/p/original/9PtBhWig5OgOpNnhD7n3hkDpltf.jpg",
+        year: "2020"
+      },
+      {
+        id: 2003,
+        title: "Demon Slayer: Mugen Train",
+        genre: "action",
+        rating: 4.9,
+        description: "เมื่อทันจิโร่, เซ็นอิตสึ และอิโนะสุเกะ ต้องร่วมมือกับเสาหลักเพลิง เคียวจูโร่ เร็นโกคุ ขึ้นรถไฟขบวนพิเศษเพื่อสืบสวนเหตุการณ์ผู้โดยสารหายสาบสูญ พวกเขาต้องเผชิญหน้ากับ เอ็นมุ อสูรข้างแรมลำดับที่ 1 ผู้มีวิชาเลือดอสูรที่สามารถสะกดเหยื่อให้หลับใหลและตกอยู่ในฝันร้าย และหากพวกเขาไม่สามารถเอาชนะอสูรตนนี้ได้ ความตายก็จะมาเยือน ",
+        poster: "https://m.media-amazon.com/images/M/MV5BYmEwNjIyNDItNjVjOS00NjM5LWJlOGUtODI4YWFlZmQ0MjJmXkEyXkFqcGc@._V1_.jpg",
+        year: "2020"
+      },
+      {
+        id: 2004,
+        title: "The Father",
+        genre: "drama",
+        rating: 4.9,
+        description: "แอนโธนี ชายชราวัย 80 ปี ที่เริ่มมีอาการของโรคสมองเสื่อม ทำให้เขาสับสนและปฏิเสธความช่วยเหลือจาก แอนน์ ลูกสาวของเขา. เรื่องราวจะพาผู้ชมไปสัมผัสประสบการณ์ที่บิดเบี้ยวของแอนโธนีที่พยายามทำความเข้าใจโลกที่เปลี่ยนแปลงไปรอบตัว รวมถึงการหลงทางในความทรงจำระหว่างปัจจุบันและอดีต จนทำให้เขาสงสัยแม้กระทั่งความจริงและความสัมพันธ์กับคนรอบข้าง",
+        poster: "https://m.media-amazon.com/images/M/MV5BYzUxMDAyMDAtNzIyZi00OGQ1LTllMjEtYzRjOThkZTUxNTliXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        year: "2020"
+      },
+      {
+        id: 2005,
+        title: "A Quiet Place Part II",
+        genre: "horror",
+        rating: 4.6,
+        description: "หลังจากเหตุการณ์ในภาคแรก ครอบครัวแอ็บบอตต์ต้องเดินทางออกจากบ้านเพื่อเอาชีวิตรอดและหาที่ปลอดภัยกว่าเดิม พวกเขาต้องเผชิญกับอันตรายจากสิ่งมีชีวิตที่ล่าตามเสียง และยังต้องเจอกับมนุษย์ที่รอดชีวิตคนอื่นๆ ที่อาจเป็นภัยได้เช่นกัน ระหว่างทาง ครอบครัวได้พบกับเอมเม็ตต์ (คิลเลี่ยน เมอร์ฟีย์) ชายที่รอดชีวิตจากการสูญเสียครั้งใหญ่และมีท่าทีเย็นชา ครอบครัวแอ็บบอตต์ต้องเอาชนะความกลัวและเผชิญหน้ากับความท้าทายใหม่ๆ เพื่อความอยู่รอด ",
+        poster: "https://m.media-amazon.com/images/M/MV5BNjRiYjk4ZmItNGQ5NS00MmRhLTk4Y2EtMGQ1MTYxZWJhYjU0XkEyXkFqcGc@._V1_.jpg",
+        year: "2020"
+      },
+
+      // --- 2019 ---
+      {
+        id: 1901,
+        title: "Parasite",
+        genre: "drama",
+        rating: 5.0,
+        description: "เรื่องราวของครอบครัวคิม 4 คน ที่มีฐานะยากจน ได้แทรกซึมเข้าทำงานในบ้านของครอบครัวพาร์ค มหาเศรษฐี โดยใช้กลอุบายและการหลอกลวง จนสามารถเข้ามาอยู่ในครอบครัวพาร์คได้ทั้งหมด แต่แล้วความสัมพันธ์ที่สร้างขึ้นจากคำลวงนี้ ก็ทำให้เกิดเหตุการณ์พลิกผันและนำไปสู่โศกนาฏกรรม ",
+        poster: "https://m.media-amazon.com/images/I/91KArYP03YL._AC_SL1500_.jpg",
+        year: "2019"
+      },
+      {
+        id: 1902,
+        title: "Joker",
+        genre: "drama",
+        rating: 4.8,
+        description: "เล่าถึง อาเธอร์ เฟล็ก ชายที่พยายามใช้ชีวิตอย่างคนปกติในเมืองก็อตแธมที่เต็มไปด้วยความไม่เท่าเทียมและความโหดร้าย แต่กลับถูกสังคมเมินเฉยและถูกกระทำซ้ำๆ จนสุดท้ายเขาก็ตัดสินใจตอบโต้ด้วยความรุนแรงและค่อยๆ เปลี่ยนไปเป็น โจ๊กเกอร์ ในที่สุด ",
+        poster: "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+        year: "2019"
+      },
+      {
+        id: 1903,
+        title: "Avengers: Endgame",
+        genre: "action",
+        rating: 4.9,
+        description: "หลังเหตุการณ์ที่ธานอสดีดนิ้วและทำลายล้างสิ่งมีชีวิตครึ่งหนึ่งของจักรวาล เหล่าอเวนเจอร์สที่เหลือรอดต้องเผชิญกับความสูญเสียและความสิ้นหวัง จนกระทั่งสกอต แลง (Ant-Man) หลุดออกมาจากมิติควอนตัม และเสนอแนวคิดเรื่องการเดินทางข้ามเวลาเพื่อย้อนกลับไปรวบรวม อินฟินิตี้สโตน ในอดีตเพื่อแก้ไขสิ่งที่เกิดขึ้น พวกเขาจึงต้องร่วมมือกันอีกครั้ง ทิ้งความขัดแย้งไว้เบื้องหลัง เพื่อเผชิญหน้ากับศึกครั้งสุดท้ายที่จะตัดสินชะตากรรมของจักรวาล",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_FMjpg_UX1000_.jpg",
+        year: "2019"
+      },
+      {
+        id: 1904,
+        title: "Knives Out",
+        genre: "comedy",
+        rating: 4.7,
+        description: "กล่าวถึงนักเขียนนิยายสืบสวนชื่อดังอย่าง ฮาร์ลาน ธรอมบีย์ ที่เสียชีวิตอย่างปริศนาในบ้านพักหลังฉลองวันเกิดครบรอบ 85 ปี นักสืบเอกชนผู้ลึกลับชื่อ เบอนัวต์ บลองก์ จึงถูกจ้างมาไขคดีนี้อย่างลับๆ และพบว่าทุกคนในครอบครัวที่มารวมตัวกันในวันนั้นล้วนตกเป็นผู้ต้องสงสัย เนื่องจากต่างมีความขัดแย้งและแรงจูงใจซ่อนเร้น หนังติดตามการสืบสวนที่เต็มไปด้วยเบาะแส คำโกหก และความลับในตระกูลธรอมบีย์ เพื่อหาตัวฆาตกรที่แท้จริง ",
+        poster: "https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_FMjpg_UX1000_.jpg",
+        year: "2019"
+      },
+      {
+        id: 1905,
+        title: "1917",
+        genre: "action",
+        rating: 4.8,
+        description: "เรื่องราวของทหารอังกฤษสองนายคือ สิบโทสโคฟิลด์ (Schofield) และ สิบโทเบลค (Blake) ในช่วงสงครามโลกครั้งที่ 1 ที่ได้รับภารกิจอันตรายให้ต้องข้ามผ่านดินแดนของข้าศึกภายใน 24 ชั่วโมง เพื่อส่งสารสำคัญไปเตือนกองพันทหารที่กำลังจะเดินเข้าสู่การซุ่มโจมตีของเยอรมัน ซึ่งจะทำให้ทหารกว่า 1,600 นายต้องเสียชีวิตทั้งหมด",
+        poster: "https://m.media-amazon.com/images/M/MV5BOTdmNTFjNDEtNzg0My00ZjkxLTg1ZDAtZTdkMDc2ZmFiNWQ1XkEyXkFqcGdeQXVyNTAzNzgwNTg@._V1_FMjpg_UX1000_.jpg",
+        year: "2019"
+      },
+
+      // --- 2018 ---
+      {
+        id: 1801,
+        title: "Avengers: Infinity War",
+        genre: "action",
+        rating: 4.9,
+        description: "เมื่อธานอส ไททันผู้บ้าคลั่ง ต้องการรวบรวม อินฟินิตี้สโตนทั้งหกเพื่อครอบครองพลังที่เหนือจินตนาการ และใช้มันเพื่อเปลี่ยนแปลงจักรวาล เหล่าอเวนเจอร์สและพันธมิตรจากทั่วจักรวาลต้องรวมพลังกันเพื่อหยุดยั้งแผนการของเขา ซึ่งเป็นการต่อสู้ที่ยิ่งใหญ่และท้าทายที่สุดเท่าที่พวกเขาเคยเผชิญหน้ามา ",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_FMjpg_UX1000_.jpg",
+        year: "2018"
+      },
+      {
+        id: 1802,
+        title: "Spider-Man: Into the Spider-Verse",
+        genre: "action",
+        rating: 4.9,
+        description: "การผจญภัยของ ไมลส์ โมราเลส เด็กหนุ่มผิวสีที่ถูกแมงมุมกัมมันตภาพรังสี咬 แล้วได้รับพลังเหนือมนุษย์ ทำให้เขากลายเป็นสไปเดอร์แมนอีกคนในจักรวาลนี้ เมื่อ คิงพิน ทลายกำแพงข้ามมิติเพื่อเป้าหมายบางอย่าง ทำให้สไปเดอร์แมนจากจักรวาลอื่น ๆ ทั้งปีเตอร์ ปาร์กเกอร์, สไปเดอร์-เกวน, สไปเดอร์-แมน นัวร์, เพนี ปาร์กเกอร์ และสไปเดอร์-แฮม ถูกดึงมายังโลกของไมลส์ ไมลส์ต้องร่วมมือกับเหล่าสไปเดอร์-แมนที่ต่างก็มีปัญหาส่วนตัว เพื่อเรียนรู้ที่จะควบคุมพลังของตัวเอง และหยุดยั้งคิงพินไม่ให้ทำลายจักรวาล ",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_FMjpg_UX1000_.jpg",
+        year: "2018"
+      },
+      {
+        id: 1803,
+        title: "Black Panther",
+        genre: "action",
+        rating: 4.7,
+        description: "เป็นเรื่องราวของ ที'ชัลล่า ที่กลับไปยัง วากานดา ประเทศแอฟริกาที่ซ่อนตัวด้วยเทคโนโลยีขั้นสูง เพื่อขึ้นเป็นกษัตริย์องค์ใหม่ หลังจากการเสียชีวิตของบิดา แต่ตำแหน่งของเขากลับถูกท้าทายโดยศัตรูเก่าอย่าง เอริค คิลมองเกอร์ ทำให้ที'ชัลล่าต้องต่อสู้เพื่อปกป้องบัลลังก์ วากานดา และโลก จากภัยคุกคามที่อันตราย ",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_FMjpg_UX1000_.jpg",
+        year: "2018"
+      },
+      {
+        id: 1804,
+        title: "A Quiet Place",
+        genre: "horror",
+        rating: 4.6,
+        description: "เรื่องราวของครอบครัว Abbott ที่ต้องเอาชีวิตรอดในโลกที่ถูกรุกรานโดยสิ่งมีชีวิตต่างดาวที่ล่าเหยื่อด้วยเสียง ทำให้พวกเขาต้องใช้ชีวิตอย่างเงียบเชียบที่สุด ครอบครัวนี้ต้องเผชิญกับอุปสรรคต่างๆ โดยเฉพาะการพยายามมีชีวิตรอดจากการคลอดลูกในสถานการณ์ที่อันตราย ",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_FMjpg_UX1000_.jpg",
+        year: "2018"
+      },
+      {
+        id: 1805,
+        title: "Green Book",
+        genre: "drama",
+        rating: 4.8,
+        description: "เรื่องราวการเดินทางของโทนี่ ลิป ชายชาวอิตาเลียน-อเมริกัน ที่ต้องมาเป็นคนขับรถและผู้ดูแลให้กับดร.ดอน เชอร์ลีย์ นักเปียโนคลาสสิกผิวสีชื่อดัง ในปี 1962 ระหว่างที่พวกเขาต้องออกทัวร์คอนเสิร์ตในรัฐทางตอนใต้ของอเมริกา ที่เต็มไปด้วยการแบ่งแยกเชื้อชาติและอคติ ทั้งสองคนใช้หนังสือ The Negro Motorist Green Book เป็นคู่มือในการเดินทางเพื่อความปลอดภัย และได้เรียนรู้ที่จะยอมรับและเคารพในความแตกต่างของกันและกัน จนเกิดเป็นมิตรภาพที่งดงาม ",
+        poster: "https://m.media-amazon.com/images/M/MV5BYzIzYmJlYTYtNGNiYy00N2EwLTk4ZjItMGYyZTJiOTVkM2RlXkEyXkFqcGdeQXVyODY1NDk1NjE@._V1_FMjpg_UX1000_.jpg",
+        year: "2018"
+      },
+
+      // --- 2017 ---
+      {
+        id: 1701,
+        title: "Logan",
+        genre: "action",
+        rating: 4.9,
+        description: "ในปี 2029 ที่มนุษย์กลายพันธุ์เกือบสูญพันธุ์ โลแกนผู้ชราและอ่อนแอลงต้องดูแลศาสตราจารย์ชาลส์ เซเวียร์ ที่แก่ชราและป่วย เขาและชาลส์พบกับ ลอร่า เด็กสาวกลายพันธุ์ที่ต้องการความช่วยเหลือให้เดินทางไปที่ที่ปลอดภัยในแคนาดา ซึ่งทำให้พวกเขาต้องเผชิญหน้ากับกลุ่มที่ตามล่ามนุษย์กลายพันธุ์ ",
+        poster: "https://m.media-amazon.com/images/M/MV5BYzc5MTU4N2EtYTkyMi00NjdhLTg3NWEtMTY4OTEyMzJhZTAzXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_FMjpg_UX1000_.jpg",
+        year: "2017"
+      },
+      {
+        id: 1702,
+        title: "Get Out",
+        genre: "horror",
+        rating: 4.8,
+        description: "เรื่องราวของ คริส ช่างภาพผิวสีที่ไปเยี่ยมบ้านครอบครัวของ โรส แฟนสาวผิวขาว และได้พบว่าเบื้องหลังการต้อนรับที่ดูดีเกินจริงนั้นซ่อนความลับอันน่าสะพรึงกลัวไว้ เมื่อเขาเริ่มสังเกตเห็นความผิดปกติรอบตัว และพฤติกรรมของคนใช้ผิวสีกับแขกในงานเลี้ยง ซึ่งนำไปสู่การค้นพบความจริงอันน่าขนลุกที่ครอบครัวของโรสซ่อนไว้",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_.jpg",
+        year: "2017"
+      },
+      {
+        id: 1703,
+        title: "Dunkirk",
+        genre: "action",
+        rating: 4.7,
+        description: "เหตุการณ์ทางประวัติศาสตร์ในปี 1940 ที่ทหารฝ่ายสัมพันธมิตรนับแสนนายถูกล้อมจากกองกำลังนาซีบนชายหาดดันเคิร์ก ประเทศฝรั่งเศส ภาพยนตร์เล่าเรื่องราวการอพยพที่ต้องแข่งกับเวลาจากสามมุมมอง คือ บนบก (ทหารที่ต้องเอาชีวิตรอดและหาทางขึ้นเรือ), กลางอากาศ (นักบินเครื่องบินรบอังกฤษที่ปกป้องทหารด้านล่าง) และ กลางทะเล (การเดินทางของเรือพลเรือนที่เสี่ยงอันตรายเพื่อช่วยเหลือทหาร) ",
+        poster: "https://m.media-amazon.com/images/M/MV5BN2YyZjQ0NTEtNzU5MS00NGZkLTg0MTEtYzJmMWY3MWRhZjM2XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_FMjpg_UX1000_.jpg",
+        year: "2017"
+      },
+      {
+        id: 1704,
+        title: "Coco",
+        genre: "comedy",
+        rating: 4.9,
+        description: "เป็นเรื่องราวของ มิเกล เด็กชายวัย 12 ปี ที่หลงใหลในดนตรี แต่ครอบครัวของเขากลับเกลียดชังดนตรีอย่างรุนแรง",
+        poster: "https://m.media-amazon.com/images/M/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_FMjpg_UX1000_.jpg",
+        year: "2017"
+      },
+      {
+        id: 1705,
+        title: "Blade Runner 2049",
+        genre: "sci-fi",
+        rating: 4.8,
+        description: "การผจญภัยของ 'เค' (K) เจ้าหน้าที่เบลดรันเนอร์ที่เป็นมนุษย์เทียมรุ่นใหม่ ที่ต้องตามล่ามนุษย์เทียมรุ่นเก่า และได้ค้นพบความลับที่อาจนำไปสู่ความวุ่นวายครั้งใหญ่ในสังคม เขาจึงต้องตามหา ริค เด็คการ์ด (Rick Deckard) เบลดรันเนอร์ในตำนานที่หายตัวไปนานกว่า 30 ปี",
+        poster: "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_FMjpg_UX1000_.jpg",
+        year: "2017"
+      },
+
+      // --- 2016 ---
+      {
+        id: 1601,
+        title: "La La Land",
+        genre: "drama",
+        rating: 4.8,
+        description: "เรื่องราวของเซบาสเตียน นักเปียโนแจ๊ซ และมีอา นักแสดงสาว ที่ตกหลุมรักกันในลอสแอนเจลิส ขณะที่ทั้งสองพยายามไล่ตามความฝันในวงการของตนเอง ความสัมพันธ์ของพวกเขาก็เผชิญกับความท้าทาย เมื่อความสำเร็จในอาชีพเริ่มทำให้ความรักต้องเจออุปสรรค และทั้งคู่ต้องตัดสินใจว่าความรักหรือความฝันมีความสำคัญมากกว่ากัน ",
+        poster: "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_FMjpg_UX1000_.jpg",
+        year: "2016"
+      },
+      {
+        id: 1602,
+        title: "Captain America: Civil War",
+        genre: "action",
+        rating: 4.7,
+        description: "การแตกแยกของทีมอเวนเจอร์ส หลังเกิดเหตุการณ์ที่ทำให้เกิดความเสียหาย จึงเกิดความขัดแย้งทางการเมืองที่ต้องการให้มีการควบคุมและกำกับดูแลทีมอย่างเข้มงวด ส่งผลให้ทีมแตกออกเป็นสองฝ่าย โดยฝ่ายหนึ่งนำโดย สตีฟ โรเจอร์ส (กัปตันอเมริกา) ที่ต้องการให้อเวนเจอร์สยังคงอิสระ ในขณะที่อีกฝ่ายหนึ่งนำโดย โทนี่ สตาร์ค (ไอรอนแมน) ที่เห็นด้วยกับการควบคุมของรัฐบาล ",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_FMjpg_UX1000_.jpg",
+        year: "2016"
+      },
+      {
+        id: 1603,
+        title: "Deadpool",
+        genre: "action",
+        rating: 4.6,
+        description: "เป็นเรื่องราวของเวด วิลสัน ทหารรับจ้างที่ได้รับการรักษาด้วยการทดลองลับ ทำให้เขาหายจากมะเร็ง แต่กลับต้องมีใบหน้าและร่างกายที่ผิดปกติ เขาจึงกลายเป็นฮีโร่ในชุดแดงที่ชื่อ เดดพูล เพื่อตามล่าคนที่ทำลายชีวิตเขา ในภาคต่อ เขาต้องร่วมมือกับวูล์ฟเวอรีนเพื่อปกป้องไทม์ไลน์และโลกจากภัยคุกคาม ",
+        poster: "https://m.media-amazon.com/images/M/MV5BNzY3ZWU5NGQtOTViNC00ZWVmLTliNjAtNzViNzlkZWQ4YzQ4XkEyXkFqcGc@._V1_.jpg",
+        year: "2016"
+      },
+      {
+        id: 1604,
+        title: "Train to Busan",
+        genre: "horror",
+        rating: 4.8,
+        description: "เรื่องราวของ ซอกอู (กงยู) นักธุรกิจที่ต้องเดินทางพร้อมลูกสาวชื่อซูอัน ขึ้นรถไฟ KTX จากโซลไปปูซานเพื่อเยี่ยมแม่ แต่การเดินทางครั้งนี้กลับกลายเป็นการต่อสู้เอาชีวิตรอดอย่างสิ้นหวัง เมื่อมีผู้โดยสารที่ติดเชื้อไวรัสจนกลายเป็นซอมบี้แพร่ระบาดไปทั่วขบวนรถไฟ ",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTkwOTQ4OTg0OV5BMl5BanBnXkFtZTgwMzQyOTM0OTE@._V1_FMjpg_UX1000_.jpg",
+        year: "2016"
+      },
+      {
+        id: 1605,
+        title: "Arrival",
+        genre: "sci-fi",
+        rating: 4.7,
+        description: "เมื่อยานอวกาศปริศนา 12 ลำปรากฏเหนือพื้นโลก และ ดร.หลุยส์ แบงค์ส (เอมี อดัมส์) นักภาษาศาสตร์ถูกเกณฑ์ให้เข้าร่วมทีมเพื่อสื่อสารกับมนุษย์ต่างดาว ท่ามกลางความตื่นตระหนกของทั่วโลกที่มองว่าพวกเขาเป็นภัยคุกคาม ทำให้เธอต้องรีบหาความหมายของภาษาที่ซับซ้อนของมนุษย์ต่างดาว เพื่อทำความเข้าใจเจตนาที่แท้จริงของพวกเขา ก่อนที่ความเข้าใจผิดจะนำไปสู่สงครามโลกครั้งใหม่ ",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_FMjpg_UX1000_.jpg",
+        year: "2016"
+      }
+    ];
+
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      renderMovies(movies);
+      setupEventListeners();
+    });
+
+    function setupEventListeners() {
+      // ... ส่วน Filter เดิม ...
+      const filterContainer = document.getElementById('filterContainer');
+      const btns = filterContainer.querySelectorAll('.btn');
+
+      btns.forEach(btn => {
+        btn.addEventListener('click', function () {
+          btns.forEach(b => {
+            b.classList.remove('active', 'btn-warning');
+            b.classList.add('btn-outline-light');
+          });
+          this.classList.remove('btn-outline-light');
+          this.classList.add('active', 'btn-warning');
+
+          const filter = this.getAttribute('data-filter');
+          filterMovies(filter);
+        });
+      });
+
+      // --- ส่วน Search Logic ---
+      const searchInput = document.getElementById('searchInput');
+      const searchForm = document.getElementById('navbarSearchForm'); // ต้องมีตัวแปรนี้มารับค่า ID ที่เราเพิ่งเติม
+
+      // ป้องกัน Error กรณีหา form ไม่เจอ
+      if (searchForm) {
+        searchForm.addEventListener('submit', (e) => {
+          e.preventDefault(); // ป้องกันหน้าเว็บรีเฟรชเมื่อกด Enter
+          handleSearch();
+        });
+      }
+
+      // ค้นหาทันทีขณะพิมพ์ (Real-time)
+      if (searchInput) {
+        searchInput.addEventListener('keyup', handleSearch);
+      }
+    }
+
+    // --- ส่วนที่ปรับปรุง Performance (สำคัญ) ---
+    function renderMovies(moviesToRender) {
+      const grid = document.getElementById('reviewsGrid');
+      const modalsContainer = document.getElementById('modalsContainer');
+
+      if (moviesToRender.length === 0) {
+        grid.innerHTML = '<div class="col-12 text-center text-white mt-5"><h3>ไม่พบภาพยนตร์ที่ค้นหา</h3></div>';
+        return;
+      }
+
+      let gridHTML = '';
+      let modalHTML = '';
+
+      moviesToRender.forEach(movie => {
+        // จุดที่แก้: ใช้ movie.genre โดยตรง
+        const displayGenre = movie.genre.toUpperCase();
+
+        gridHTML += `
+                <div class="col-md-4">
+                    <div class="card h-100 shadow oscar-card">
+                        <div class="oscar-badge">⭐ ${movie.rating}</div>
+                        <img src="${movie.poster}" class="card-img-top" alt="${movie.title}" 
+                             style="height: 400px; object-fit: cover; border-bottom: 1px solid #333;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-truncate">${movie.title}</h5>
+                            <p class="oscar-year mb-2 text-warning">${movie.year}</p>
+                            <button class="btn btn-warning oscar-btn" data-bs-toggle="modal" data-bs-target="#modal-movie-${movie.id}">
+                                อ่านรีวิว
+                            </button>
+                        </div>
+                    </div>
+                </div>`;
+
+        modalHTML += `
+                <div class="modal fade" id="modal-movie-${movie.id}" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content oscar-modal">
+                            <div class="modal-header">
+                                <h5 class="modal-title">🎬 ${movie.title}</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-5 mb-3">
+                                        <img src="${movie.poster}" class="img-fluid rounded shadow" style="width: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="oscar-award-info mb-3">
+                                            <h6 class="text-warning">คะแนนรีวิว: ${movie.rating}/5.0</h6>
+                                            <p class="mb-1"><strong>ปีที่ฉาย:</strong> ${movie.year}</p>
+                                            <p class="mb-1"><strong>ประเภท:</strong> ${displayGenre}</p> </div>
+                                        <h5 class="text-white">เรื่องย่อ</h5>
+                                        <p class="lead" style="font-size: 1rem; color: #ddd;">${movie.description}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+      });
+
+      grid.innerHTML = gridHTML;
+      modalsContainer.innerHTML = modalHTML;
+    }
+
+    function filterMovies(filter) {
+      // ลบตัวแปร filteredMovies global ออก ประกาศใหม่ในนี้เลย
+      const filtered = (filter === 'all')
+        ? movies
+        : movies.filter(movie => movie.year === filter); // กรองด้วยปี
+
+      document.getElementById('searchInput').value = '';
+      renderMovies(filtered);
+    }
+
+    function handleSearch() {
+      const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+
+      const searchResults = movies.filter(movie =>
+        movie.title.toLowerCase().includes(searchTerm) ||
+        movie.description.toLowerCase().includes(searchTerm) ||
+        movie.genre.toLowerCase().includes(searchTerm) // ค้นหาด้วย genre ภาษาอังกฤษแทน
+      );
+
+      renderMovies(searchResults);
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Comedy TV Shows - Movie Reviews</title>
+</head>
+
+<body class="movie-page-body">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark site-header">
+        <div class="container-fluid">
+
+            <a class="navbar-brand logo" href="index.html">
+                <img src="img/LOGO/SPU.png" alt="LOGO" class="mark">
+                <div><strong>MOVIEREVIEWS</strong>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarMenu"
+                aria-controls="mainNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="mainNavbarMenu" class="collapse navbar-collapse">
+                <form class="d-flex me-3 search-form" role="search">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="ค้นหาซีรีส์..." aria-label="Search" id="searchInput">
+                        <button class="btn btn-outline-warning" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="movieDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TOP 10 MOVIE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="movieDropdown">
+                            <li><a class="dropdown-item" href="M_Action.html">Action</a></li>
+                            <li><a class="dropdown-item" href="M_Comedy.html">Comedy</a></li>
+                            <li><a class="dropdown-item" href="M_Drama.html">Drama</a></li>
+                            <li><a class="dropdown-item" href="M_Horror.html">Horror</a></li>
+                            <li><a class="dropdown-item" href="M_Romance.html">Romance</a></li>
+                            <li><a class="dropdown-item" href="M_Fantasy.html">Fantasy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="tvDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TOP 10 TV SHOW
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="tvDropdown">
+                            <li><a class="dropdown-item" href="TV_Action.html">Action</a></li>
+                            <li><a class="dropdown-item active" href="TV_Comedy.html" aria-current="page">Comedy</a></li>
+                            <li><a class="dropdown-item" href="TV_Drama.html">Drama</a></li>
+                            <li><a class="dropdown-item" href="TV_Horror.html">Horror</a></li>
+                            <li><a class="dropdown-item" href="TV_Romance.html">Romance</a></li>
+                            <li><a class="dropdown-item" href="TV_Fantasy.html">Fantasy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Oscar.html" class="nav-link">OSCAR WINNERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Aboutus.html" class="nav-link">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="movie-page">
+        <div class="background-layer">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1920" alt="Background TV Show Cover" id="hero-background-image"
+                class="hero-bg-image">
+        </div>
+
+        <div class="container-fluid main-content-wrapper-custom">
+            <div class="row align-items-end">
+
+                <div class="col-lg-10 col-md-12">
+                    <section class="hero-banner-info" id="hero-banner-info">
+
+                        <div class="movie-logo">
+                            <h1 class="movie-title">THE OFFICE</h1>
+                        </div>
+                        <div class="movie-metadata">
+                            <span class="year">2005-2013</span>
+                            <span class="runtime">9 Seasons</span>
+                            <span class="genre">Comedy</span>
+                        </div>
+                        <p class="synopsis-hero">
+                            เรื่องราวชีวิตประจำวันของพนักงานในบริษัท Dunder Mifflin Paper Company ที่มี Michael Scott เป็นผู้จัดการสาขาที่มีบุคลิกแปลกๆ และสร้างความวุ่นวายให้กับทีมงาน...
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn btn-warning btn-lg me-2" id="openTrailerModal">
+                                <span class="icon">▶</span> WATCH TRAILER
+                            </button>
+                            <button class="btn btn-outline-light btn-lg" id="openMoreInfoModal">
+                                MORE INFO
+                            </button>
+                        </div>
+                        <div class="score">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1920px-IMDB_Logo_2016.svg.png" alt="">
+                            <span class="score-value" id="imdb-score">8.9</span>
+                            <img src="https://variety.com/wp-content/uploads/2017/08/rotten-tomatoes-logo1.jpg?w=1000&h=563&crop=1" alt="">
+                            <span class="score-value" id="rotten-tomatoes-score">81%</span>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="movie-carousel-section" id="movieCarouselSection">
+            <h2 class="carousel-title">Comedy</h2>
+            <div class="movie-carousel-wrapper">
+                <button class="carousel-arrow left-arrow" id="carouselLeftArrow">◀</button>
+                <div class="movie-carousel" id="movieCarousel">
+                    <div class="carousel-inner" id="carouselInner">
+                        <!-- TV Show cards will be generated automatically from tvShowData -->
+                    </div>
+                </div>
+                <button class="carousel-arrow right-arrow" id="carouselRightArrow">▶</button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- More Info Modal -->
+    <div class="modal fade" id="moreInfoModal" tabindex="-1" aria-labelledby="moreInfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: #1a1a1a; color: #fff;">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="moreInfoModalLabel">TV Show Information</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <img id="moreInfoPoster" src="" alt="TV Show Poster" class="img-fluid rounded" style="max-width: 300px; max-height: 450px; object-fit: cover;">
+                    </div>
+                    <div class="movie-info-content">
+                        <h3 id="moreInfoTitle" class="text-center mb-4 modal-title-custom"></h3>
+                        <div class="mb-4">
+                            <p class="mb-1"><strong>ปีที่ฉาย:</strong> <span id="moreInfoYear"></span></p>
+                            <p class="mb-1"><strong>ประเภท:</strong> <span id="moreInfoGenre"></span></p>
+                            <p class="mb-1"><strong>ความยาว:</strong> <span id="moreInfoRuntime"></span></p>
+                            <p class="mb-1"><strong>ผู้สร้าง:</strong> <span id="moreInfoDirector"></span></p>
+                            <p class="mb-1"><strong>นักแสดงนำ:</strong> <span id="moreInfoCast"></span></p>
+                        </div>
+                        <div>
+                            <h5 class="mb-3 modal-subtitle-custom">เรื่องย่อ</h5>
+                            <p id="moreInfoSynopsis" class="text-light" style="line-height: 1.6;"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- trailer -->
+    <div class="modal fade" id="trailerModal" tabindex="-1" aria-labelledby="trailerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content" style="background-color: #000;">
+
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/e6Y1_D4iE0E" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Person Detail Modal -->
+    <div class="modal fade" id="personModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="personModalTitle"></h5>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="person-movies-container" id="personMoviesContainer">
+                        <!-- TV Shows will be dynamically inserted here -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" id="backToMovieModal">ย้อนกลับ</button>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        // --- ประกาศตัวแปรก่อนใช้งาน ---
+        const movieCarousel = document.getElementById('movieCarousel');
+        const carouselInner = movieCarousel.querySelector('.carousel-inner');
+        // ใช้ function เพื่อ query movieCards ใหม่ทุกครั้ง (เพื่อให้ได้ cards ล่าสุด)
+        function getMovieCards() {
+            return movieCarousel.querySelectorAll('.movie-card');
+        }
+        let movieCards = getMovieCards();
+        console.log('Total TV show cards found:', movieCards.length);
+        const heroBackgroundImage = document.getElementById('hero-background-image');
+        const movieTitle = document.querySelector('.movie-title');
+        const movieMetadata = document.querySelector('.movie-metadata');
+        const synopsisHero = document.querySelector('.synopsis-hero');
+        const trailerIframe = document.querySelector('#trailerModal iframe');
+        const carouselLeftArrow = document.getElementById('carouselLeftArrow');
+        const carouselRightArrow = document.getElementById('carouselRightArrow');
+
+        let currentMovieIndex = 0;
+        let isProgrammaticScroll = false; // Flag to prevent scroll handler from interfering
+
+        // --- โค้ดสำหรับ Trailer Modal ---
+        const trailerModalElement = document.getElementById('trailerModal');
+        const trailerModal = new bootstrap.Modal(trailerModalElement);
+        const openModalBtn = document.getElementById('openTrailerModal');
+
+        // --- โค้ดสำหรับ More Info Modal ---
+        const moreInfoModalElement = document.getElementById('moreInfoModal');
+        const moreInfoModal = new bootstrap.Modal(moreInfoModalElement);
+        const openMoreInfoBtn = document.getElementById('openMoreInfoModal');
+
+        function updateMoreInfoModal(tvShow) {
+            document.getElementById('moreInfoPoster').src = tvShow.poster;
+            document.getElementById('moreInfoTitle').textContent = tvShow.title;
+            document.getElementById('moreInfoYear').textContent = tvShow.year;
+            document.getElementById('moreInfoGenre').textContent = tvShow.genre;
+            document.getElementById('moreInfoRuntime').textContent = tvShow.runtime;
+            
+            // Update creator with clickable name
+            const directorElement = document.getElementById('moreInfoDirector');
+            if (tvShow.creator && tvShow.creator !== 'ไม่ระบุ') {
+                directorElement.innerHTML = `<span class="clickable-name" data-person-type="director" data-person-name="${tvShow.creator}">${tvShow.creator}</span>`;
+            } else {
+                directorElement.textContent = tvShow.creator || 'ไม่ระบุ';
+            }
+            
+            // Update cast with clickable names
+            const castElement = document.getElementById('moreInfoCast');
+            if (tvShow.cast && tvShow.cast !== 'ไม่ระบุ') {
+                const castNames = tvShow.cast.split(',').map(name => name.trim());
+                castElement.innerHTML = castNames.map(name => 
+                    `<span class="clickable-name" data-person-type="actor" data-person-name="${name}">${name}</span>`
+                ).join(', ');
+            } else {
+                castElement.textContent = tvShow.cast || 'ไม่ระบุ';
+            }
+            
+            document.getElementById('moreInfoSynopsis').textContent = tvShow.synopsis;
+        }
+
+        if (openMoreInfoBtn) {
+            openMoreInfoBtn.addEventListener('click', () => {
+                const currentTVShow = tvShowData[currentMovieIndex];
+                if (currentTVShow) {
+                    updateMoreInfoModal(currentTVShow);
+                    moreInfoModal.show();
+                    // Setup clickable names after modal content is updated
+                    setTimeout(() => {
+                        setupClickableNames();
+                    }, 100);
+                }
+            });
+        }
+
+        function convertToEmbedUrl(url) {
+            if (url.includes('youtube.com/embed/')) {
+                return url;
+            } else if (url.includes('youtube.com/watch?v=')) {
+                return url.replace("https://www.youtube.com/watch?v=", "https://www.youtube.com/embed/");
+            } else if (url.includes('youtu.be/')) {
+                return url.replace("https://youtu.be/", "https://www.youtube.com/embed/");
+            }
+            return url;
+        }
+
+        // Function สร้าง TV show cards อัตโนมัติจาก tvShowData
+        function renderMovieCards() {
+            const carouselInner = document.getElementById('carouselInner');
+            if (!carouselInner || !tvShowData || tvShowData.length === 0) {
+                console.error('Cannot render TV show cards: carouselInner or tvShowData is missing');
+                return;
+            }
+
+            // ลบ cards เดิมทั้งหมด
+            carouselInner.innerHTML = '';
+
+            // สร้าง cards ใหม่จาก tvShowData
+            tvShowData.forEach((tvShow, index) => {
+                const card = document.createElement('div');
+                card.className = 'movie-card';
+                card.setAttribute('data-movie-id', tvShow.id);
+                card.setAttribute('data-movie-index', index);
+                if (index === currentMovieIndex) {
+                    card.classList.add('active');
+                }
+
+                const img = document.createElement('img');
+                img.src = tvShow.poster;
+                img.alt = `${tvShow.title} Poster`;
+
+                card.appendChild(img);
+                carouselInner.appendChild(card);
+            });
+
+            console.log(`Rendered ${tvShowData.length} TV show cards`);
+        }
+
+        // Function setup carousel (event listeners และ arrows)
+        function setupCarousel() {
+            // Query movieCards ใหม่
+            movieCards = getMovieCards();
+            
+            if (!movieCards || movieCards.length === 0) {
+                console.warn('No TV show cards found for carousel setup');
+                return;
+            }
+
+            // ใช้ event delegation สำหรับ movie cards
+            const carouselInner = document.getElementById('carouselInner');
+            if (carouselInner) {
+                if (carouselInner._cardClickHandler) {
+                    carouselInner.removeEventListener('click', carouselInner._cardClickHandler);
+                }
+                
+                carouselInner._cardClickHandler = (e) => {
+                    const card = e.target.closest('.movie-card');
+                    if (card) {
+                        const index = parseInt(card.getAttribute('data-movie-index'));
+                        if (!isNaN(index) && tvShowData[index]) {
+                            isProgrammaticScroll = true;
+                            currentMovieIndex = index;
+                            updateHeroBanner(tvShowData[currentMovieIndex]);
+                            setActiveMovieCard(currentMovieIndex);
+                            setTimeout(() => {
+                                isProgrammaticScroll = false;
+                            }, 500);
+                        }
+                    }
+                };
+                
+                carouselInner.addEventListener('click', carouselInner._cardClickHandler);
+            }
+
+            // Setup carousel arrows
+            const leftArrow = document.getElementById('carouselLeftArrow');
+            const rightArrow = document.getElementById('carouselRightArrow');
+            
+            if (leftArrow && rightArrow && movieCarousel && movieCards.length > 0) {
+                if (leftArrow._clickHandler) {
+                    leftArrow.removeEventListener('click', leftArrow._clickHandler);
+                }
+                if (rightArrow._clickHandler) {
+                    rightArrow.removeEventListener('click', rightArrow._clickHandler);
+                }
+
+                const scrollStep = movieCards[0].offsetWidth + 20;
+
+                leftArrow._clickHandler = (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    isProgrammaticScroll = true;
+                    const currentScroll = movieCarousel.scrollLeft;
+                    const newScroll = Math.max(0, currentScroll - scrollStep);
+                    movieCarousel.scrollTo({
+                        left: newScroll,
+                        behavior: 'smooth'
+                    });
+                    setTimeout(() => {
+                        isProgrammaticScroll = false;
+                    }, 500);
+                };
+
+                rightArrow._clickHandler = (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    isProgrammaticScroll = true;
+                    const currentScroll = movieCarousel.scrollLeft;
+                    const maxScroll = movieCarousel.scrollWidth - movieCarousel.clientWidth;
+                    const newScroll = Math.min(maxScroll, currentScroll + scrollStep);
+                    movieCarousel.scrollTo({
+                        left: newScroll,
+                        behavior: 'smooth'
+                    });
+                    setTimeout(() => {
+                        isProgrammaticScroll = false;
+                    }, 500);
+                };
+
+                leftArrow.addEventListener('click', leftArrow._clickHandler);
+                rightArrow.addEventListener('click', rightArrow._clickHandler);
+            }
+
+            // Add scroll event listener to update active card
+            if (movieCarousel) {
+                if (movieCarousel._scrollHandler) {
+                    movieCarousel.removeEventListener('scroll', movieCarousel._scrollHandler);
+                }
+                
+                let scrollTimeout;
+                movieCarousel._scrollHandler = () => {
+                    if (isProgrammaticScroll) return;
+                    
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(() => {
+                        const cards = getMovieCards();
+                        if (cards.length === 0) return;
+                        
+                        const carouselCenter = movieCarousel.scrollLeft + (movieCarousel.offsetWidth / 2);
+                        let closestCard = null;
+                        let closestDistance = Infinity;
+                        
+                        cards.forEach((card, index) => {
+                            const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+                            const distance = Math.abs(cardCenter - carouselCenter);
+                            if (distance < closestDistance) {
+                                closestDistance = distance;
+                                closestCard = { card, index };
+                            }
+                        });
+                        
+                        if (closestCard && closestCard.index !== currentMovieIndex) {
+                            currentMovieIndex = closestCard.index;
+                            updateHeroBanner(tvShowData[currentMovieIndex]);
+                            setActiveMovieCard(currentMovieIndex);
+                        }
+                    }, 150);
+                };
+                
+                movieCarousel.addEventListener('scroll', movieCarousel._scrollHandler);
+            }
+
+            console.log('Carousel setup completed');
+        }
+
+        const tvShowData = [
+            {
+                id: 1,
+                title: "Seinfeld",
+                year: "1989–1998",
+                runtime: "9 Seasons",
+                genre: "Sitcom, Observational comedy",
+                creator: "Larry David, Jerry Seinfeld",
+                cast: "Jerry Seinfeld, Julia Louis-Dreyfus, Michael Richards, Jason Alexander",
+                synopsis: "มุ่งเน้นมุมชีวิตประจำวันของ Jerry และเพื่อน ๆ ในนิวยอร์ก ผ่านมุมมองจิกกัดเรื่องธรรมดาที่เกิดขึ้นในชีวิต",
+                background: "https://cdn.britannica.com/09/189409-050-01172C19/Cast-Jason-Alexander-Seinfeld-Michael-Richards.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BMmRjNjZjN2ItN2FkYi00ZDg0LWExN2EtMTU2ODUwNWU1M2NhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=u_bArdgpin0",
+                imdbScore: "8.9",
+                rottenTomatoesScore: "89%"
+            },
+            {
+                id: 2,
+                title: "The Office (US)",
+                year: "2005–2013",
+                runtime: "9 Seasons",
+                genre: "Greg Daniels",
+                creator: "David Benioff, D.B. Weiss",
+                cast: "Steve Carell, Rainn Wilson, John Krasinski, Jenna Fischer",
+                synopsis: "รายการเสมือนสารคดี (mockumentary) บันทึกชีวิตประจำวันในบริษัทกระดาษ Dunder Mifflin — พนักงานจัดการอีโก้ แกล้งกัน โรแมนซ์ และความฮาของการทำงานออฟฟิศ",
+                background: "https://resizing.flixster.com/KHP8WIWqGr-3MmT1Sa9GvDtb3Q8=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p185008_b_h9_ac.jpg",
+                poster: "https://upload.wikimedia.org/wikipedia/en/5/58/TheOffice_S7_DVD.jpg",
+                trailer: "https://www.youtube.com/watch?v=tNcDHWpselE",
+                imdbScore: "9.0",
+                rottenTomatoesScore: "81%"
+            },
+            {
+                id: 3,
+                title: "Friends",
+                year: "1994–2004",
+                runtime: "10 Seasons",
+                genre: "Sitcom, Romantic comedy, Slice of life",
+                creator: "David Crane, Marta Kauffman",
+                cast: "Jennifer Aniston, Courteney Cox, Lisa Kudrow",
+                synopsis: "เล่าเรื่องชีวิต +มิตรภาพของ 6 เพื่อนที่อาศัยในแมนฮัตตัน: ความรัก งาน มิตรภาพ และการสนับสนุนซึ่งกันและกัน",
+                background: "https://play-images-prod-ctf.tech.tvnz.co.nz/api/v1/web/image/3CLEzO37tocxCoSmzzcxwx/2733ae58689b3e59e477a86d2da48a36/friends-showtile.png.2733ae58689b3e59e477a86d2da48a36.jpg?width=1200&height=630",
+                poster: "https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_.jpg",
+                trailer: "https://www.youtube.com/watch?v=8wThS5WCzs4",
+                imdbScore: "8.9",
+                rottenTomatoesScore: "78%"
+            },
+            {
+                id: 4,
+                title: "M*A*S*H",
+                year: "1972–1983",
+                runtime: "11 Seasons",
+                genre: "Comedy, Drama, War, Medical comedy",
+                creator: "Larry Gelbart",
+                cast: "Alan Alda, Loretta Swit, Jamie Farr",
+                synopsis: "ซีรีส์เกี่ยวกับโรงพยาบาลทหารในสงครามเกาหลี — ใช้อารมณ์ขัน +ดราม่าเพื่อสะท้อนชีวิตทหารและแพทย์ท่ามกลางสงคราม",
+                background: "https://i.guim.co.uk/img/media/c3abb7a7312639ed6ca5964181e7f3fb078cd065/0_306_1889_1134/master/1889.jpg?width=1200&quality=85&auto=format&fit=max&s=75113f019b3290650345f83235cf6825",
+                poster: "https://m.media-amazon.com/images/M/MV5BN2U1YTAyMjktOGRjZi00OWUzLTliMzItY2U0MjliNzNhOGFlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=62R01V7tV-M",
+                imdbScore: "8.5",
+                rottenTomatoesScore: "89%"
+            },
+            {
+                id: 5,
+                title: "All in the Family",
+                year: "1971–1979",
+                runtime: "9 Seasons",
+                genre: "Sitcom, Social satire",
+                creator: "Norman Lear",
+                cast: "Carroll O'Connor, Jean Stapleton, Rob Reiner",
+                synopsis: "ครอบครัว working-class ที่มักมีการถกเถียงเรื่องสังคม การเมือง และค่านิยมแบบเดิม vs ใหม่ — เป็นซิทคอมที่เสียดสีประเด็นใหญ่ของสังคม",
+                background: "https://canvas-lb.tubitv.com/opts/iweMhCCcxn9RzA==/51b0a5c5-41a8-4d1a-8b5a-6f5c64f1dd2a/CPwDEJ0COgUxLjEuOA==",
+                poster: "https://m.media-amazon.com/images/M/MV5BNjNhYWY1ZWItYTg5OC00ZWFiLWE5YmUtYTJkYTFkNDQzODlhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=gNgh4YfG4UM",
+                imdbScore: "8.4",
+                rottenTomatoesScore: "85%"
+            },
+            {
+                id: 6,
+                title: "I Love Lucy",
+                year: "1951–1957",
+                runtime: "6 Seasons",
+                genre: "Sitcom, Classic comedy",
+                creator: "Lucille Ball, Desi Arnaz",
+                cast: "Lucille Ball, Desi Arnaz, Vivian Vance, William Frawley",
+                synopsis: "Lucy Ricardo พยายามโชว์ความสามารถ /สร้างสถานการณ์ฮา ๆ กับสามี Ricky — โดยมักจบลงในเรื่องป่วน ๆ แบบคลาสสิก",
+                background: "https://cdn.aarp.net/content/dam/aarp/entertainment/television/2022/03/1140-i-love-lucy.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BOGRmMjkwNTItMjQyZi00ZWU4LTgzNzItZTMwYWMwNzE4ZDI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=z1PcxSSH4VM",
+                imdbScore: "8.5",
+                rottenTomatoesScore: "95%"
+            },
+            {
+                id: 7,
+                title: "The Simpsons",
+                year: "1989–ปัจจุบัน",
+                runtime: "37 Seasons",
+                genre: "Animated sitcom, Satire, Comedy",
+                creator: "Matt Groening",
+                cast: "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith",
+                synopsis: "ครอบครัว Simpson — Homer, Marge, Bart, Lisa, Maggie — ใช้เสียดสีชีวิตอเมริกัน สังคม วัฒนธรรม และการเมืองผ่านตัวละครในเมือง Springfield",
+                background: "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/88b98d28-7feb-494a-b31a-05b49d71f1ea/compose?aspectRatio=1.78&format=webp&width=1200",
+                poster: "https://m.media-amazon.com/images/M/MV5BNTU2OWE0YWYtMjRlMS00NTUwLWJmZWUtODFhNzJiMGJlMzI3XkEyXkFqcGc@._V1_.jpg",
+                trailer: "https://www.youtube.com/watch?v=HVDieI6Dp2s",
+                imdbScore: "8.6",
+                rottenTomatoesScore: "85%"
+            },
+            {
+                id: 8,
+                title: "Arrested Development",
+                year: "2003-2019",
+                runtime: "5 Seasons",
+                genre: "Sitcom, Comedy, Family dysfunction, Satire",
+                creator: "Mitchell Hurwitz",
+                cast: "Jason Bateman, Michael Cera, Portia de Rossi, Will Arnett",
+                synopsis: "ครอบครัว Bluth ร่ำรวยแต่ล้มละลาย — สมาชิกครอบครัวต่างป่วนและแตกแยก",
+                background: "https://ntvb.tmsimg.com/assets/p7896054_b_h10_aa.jpg?w=960&h=540",
+                poster: "https://m.media-amazon.com/images/M/MV5BOTk3N2M0MjktMDhkNi00ZGVhLTk4YTUtYjI5MDJmMWUzNTgwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                trailer: "https://www.youtube.com/watch?v=vzVhPCMAxWQ",
+                imdbScore: "8.6",
+                rottenTomatoesScore: "75%"
+            },
+            {
+                id: 9,
+                title: "The Mary Tyler Moore Show",
+                year: "1970-1977",
+                runtime: "7 Seasons",
+                genre: "Sitcom, Workplace, Feminist comedy",
+                creator: "James L. Brooks, Allan Burns",
+                cast: "Mary Tyler Moore, Edward Asner, Gavin MacLeod",
+                synopsis: "Mary Richards เป็นผู้หญิงโสดทำงานเป็นนักข่าวในทีวี — ซีรีส์เล่าเรื่องชีวิตการทำงาน มิตรภาพ และอิสระของผู้หญิงยุคนั้น",
+                background: "https://people.com/thmb/jNmoikHEzxBsiXJWTpS-kko1GKY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(717x134:719x136)/the-mary-tyler-moore-show-Ted-Knight-Ed-Asner-Gavin-MacLeod-Georgia-Engel-Mary-Tyler-Moore-Betty-White-022025-db227cfaa6f64305ad872037f3f61a6e.jpg",
+                poster: "https://m.media-amazon.com/images/M/MV5BMDcxZTVjOWUtOTJjYy00MmQzLWFiMDgtYmE5YWEwNzRkY2QwXkEyXkFqcGc@._V1_.jpg",
+                trailer: "https://www.youtube.com/watch?v=zU5p79a7IgU",
+                imdbScore: "8.3",
+                rottenTomatoesScore: "92%"
+            },
+            {
+                id: 10,
+                title: "The Carol Burnett Show",
+                year: "1967–1978",
+                runtime: "11 Seasons",
+                genre: "Variety, Sketch comedy, Musical, Comedy",
+                creator: "Bob Banner, Joe Hamilton, Carol Burnett",
+                cast: "Carol Burnett, Harvey Korman, Vicki",
+                synopsis: "รายการวาไรตี้และสเก็ตช์ — มีบทตลก, ดนตรี,การเล่นบทละครสั้น — เป็นหนึ่งในรายการสเก็ตช์ที่โด่งดังและมีอิทธิพลมาก",
+                background: "https://people.com/thmb/SvtzuktXtco_rrpJuncDHoRq24o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(709x333:711x335)/the-carole-burnett-show-020425-1-2125b1378b0c4f69b9a648dbc6436f96.jpg",
+                poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p184227_b_v13_aa.jpg",
+                trailer: "https://www.youtube.com/watch?v=eknfP6txA8Y",
+                imdbScore: "8.7",
+                rottenTomatoesScore: "-"
+            }
+        ];
+
+        openModalBtn.addEventListener('click', () => {
+            const currentTrailer = tvShowData[currentMovieIndex].trailer;
+            trailerIframe.src = convertToEmbedUrl(currentTrailer);
+            trailerModal.show();
+        });
+
+        trailerModalElement.addEventListener('hidden.bs.modal', () => {
+            trailerIframe.src = '';
+        });
+
+        function updateHeroBanner(tvShow) {
+            heroBackgroundImage.style.opacity = '0';
+            setTimeout(() => {
+                heroBackgroundImage.src = tvShow.background;
+                movieTitle.textContent = tvShow.title;
+                movieMetadata.innerHTML = `
+                    <span class="year">${tvShow.year}</span> 
+                    <span class="runtime">${tvShow.runtime}</span> 
+                    <span class="genre">${tvShow.genre}</span>
+                `;
+                synopsisHero.textContent = tvShow.synopsis;
+                document.getElementById('imdb-score').textContent = tvShow.imdbScore;
+                document.getElementById('rotten-tomatoes-score').textContent = tvShow.rottenTomatoesScore;
+                heroBackgroundImage.style.opacity = '1';
+            }, 300);
+        }
+
+        function setActiveMovieCard(index) {
+            const cards = getMovieCards();
+            cards.forEach((card, i) => {
+                card.classList.toggle('active', i === index);
+            });
+            const activeCard = cards[index];
+            if (activeCard && movieCarousel) {
+                isProgrammaticScroll = true;
+                const scrollOffset = activeCard.offsetLeft - (movieCarousel.offsetWidth / 2) + (activeCard.offsetWidth / 2);
+                movieCarousel.scroll({
+                    left: scrollOffset,
+                    behavior: 'smooth'
+                });
+                setTimeout(() => {
+                    isProgrammaticScroll = false;
+                }, 500);
+            }
+        }
+
+        // สร้าง TV show cards อัตโนมัติจาก tvShowData
+        renderMovieCards();
+
+        // Setup carousel
+        setupCarousel();
+
+        // โหลดข้อมูล TV show เริ่มต้น
+        if (tvShowData.length > 0) {
+            if (currentMovieIndex >= tvShowData.length) {
+                currentMovieIndex = 0;
+            }
+            updateHeroBanner(tvShowData[currentMovieIndex]);
+            setActiveMovieCard(currentMovieIndex);
+        }
+
+        const searchInput = document.getElementById('searchInput');
+        const searchForm = document.querySelector('.search-form');
+
+        function performSearch(searchTerm) {
+            if (!searchTerm || searchTerm.trim() === '') {
+                return false;
+            }
+            const term = searchTerm.trim().toLowerCase();
+            const foundTVShow = tvShowData.find(tvShow => 
+                tvShow.title.toLowerCase().includes(term) ||
+                tvShow.genre.toLowerCase().includes(term) ||
+                tvShow.synopsis.toLowerCase().includes(term)
+            );
+            if (foundTVShow) {
+                const tvShowIndex = tvShowData.findIndex(t => t.id === foundTVShow.id);
+                if (tvShowIndex !== -1) {
+                    currentMovieIndex = tvShowIndex;
+                    updateHeroBanner(tvShowData[currentMovieIndex]);
+                    setActiveMovieCard(currentMovieIndex);
+                    setTimeout(() => {
+                        const cards = getMovieCards();
+                        const foundCard = cards[tvShowIndex];
+                        if (foundCard) {
+                            foundCard.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                        }
+                    }, 350);
+                }
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        if (searchForm && searchInput) {
+            searchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                if (searchTerm === '') {
+                    return;
+                }
+                const found = performSearch(searchTerm);
+                if (!found) {
+                    alert('ไม่พบซีรีส์ที่คุณค้นหา');
+                } else {
+                    const url = new URL(window.location);
+                    url.searchParams.delete('search');
+                    window.history.replaceState({}, '', url);
+                }
+            });
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchParam = urlParams.get('search');
+        if (searchParam) {
+            setTimeout(() => {
+                searchInput.value = searchParam;
+                const found = performSearch(searchParam);
+                if (!found) {
+                    alert('ไม่พบซีรีส์ที่คุณค้นหา');
+                }
+            }, 100);
+        }
+
+        // --- Person Modal Functionality ---
+        let previousModalId = null;
+
+        const personTVShowsData = {
+            'Vince Gilligan': {
+                type: 'director',
+                movies: [
+                    { name: 'BREAKING BAD (2008-2013)', poster: 'https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWI2OGMtM2YzYjI0YjUyYjQyXkEyXkFqcGc@._V1_.jpg' },
+                    { name: 'Better Call Saul (2015-2022)', poster: 'https://m.media-amazon.com/images/M/MV5BMGE4YzY4NGEtOWYyYS00ZDk2LWExMmMtZDIyODhiMmNlMGE0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg' }
+                ]
+            },
+            'David Benioff': {
+                type: 'director',
+                movies: [
+                    { name: 'GAME OF THRONES (2011-2019)', poster: 'https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg' }
+                ]
+            },
+            'D.B. Weiss': {
+                type: 'director',
+                movies: [
+                    { name: 'GAME OF THRONES (2011-2019)', poster: 'https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg' }
+                ]
+            },
+            'Eric Kripke': {
+                type: 'director',
+                movies: [
+                    { name: 'THE BOYS (2019-Present)', poster: 'https://m.media-amazon.com/images/M/MV5BMTY2NDIyODAwNV5BMl5BanBnXkFtZTgwNzY3MTIzNzM@._V1_.jpg' }
+                ]
+            },
+            'The Duffer Brothers': {
+                type: 'director',
+                movies: [
+                    { name: 'STRANGER THINGS (2016-Present)', poster: 'https://m.media-amazon.com/images/M/MV5BN2ZmYjg1YmItNWQ4OC00YWM0LWE0ZDktYThjOTZiZjVhYTNiXkEyXkFqcGdeQXVyNjgxNTQ3Mzg@._V1_.jpg' }
+                ]
+            },
+            'Jon Favreau': {
+                type: 'director',
+                movies: [
+                    { name: 'THE MANDALORIAN (2019-Present)', poster: 'https://m.media-amazon.com/images/M/MV5BZDhlMzY0ZGItZTcyNS00ZTAxLWIyMmYtZGQyZGFlY2M1ZjA3XkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_.jpg' }
+                ]
+            },
+            'Steven Knight': {
+                type: 'director',
+                movies: [
+                    { name: 'PEAKY BLINDERS (2013-2022)', poster: 'https://m.media-amazon.com/images/M/MV5BMTkzNjEzMDEzNF5BMl5BanBnXkFtZTgwMDI0MjE4MjE@._V1_.jpg' }
+                ]
+            },
+            'Bryan Cranston': {
+                type: 'actor',
+                movies: [
+                    { name: 'BREAKING BAD (2008-2013)', poster: 'https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWI2OGMtM2YzYjI0YjUyYjQyXkEyXkFqcGc@._V1_.jpg' }
+                ]
+            },
+            'Aaron Paul': {
+                type: 'actor',
+                movies: [
+                    { name: 'BREAKING BAD (2008-2013)', poster: 'https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWI2OGMtM2YzYjI0YjUyYjQyXkEyXkFqcGc@._V1_.jpg' }
+                ]
+            },
+            'Emilia Clarke': {
+                type: 'actor',
+                movies: [
+                    { name: 'GAME OF THRONES (2011-2019)', poster: 'https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg' }
+                ]
+            },
+            'Kit Harington': {
+                type: 'actor',
+                movies: [
+                    { name: 'GAME OF THRONES (2011-2019)', poster: 'https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg' }
+                ]
+            },
+            'Henry Cavill': {
+                type: 'actor',
+                movies: [
+                    { name: 'THE WITCHER (2019-Present)', poster: 'https://m.media-amazon.com/images/M/MV5BN2FiOWU4YzYtMzZiOS00MzcyLTlkOGEtOTgwZmEwMzAxMzA3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg' }
+                ]
+            }
+        };
+
+        function setupClickableNames() {
+            const clickableNames = document.querySelectorAll('.clickable-name');
+            
+            clickableNames.forEach(nameElement => {
+                if (nameElement.hasAttribute('data-listener-attached')) return;
+                nameElement.setAttribute('data-listener-attached', 'true');
+                
+                nameElement.style.cursor = 'pointer';
+                nameElement.style.color = '#FFD700';
+                nameElement.style.textDecoration = 'underline';
+                nameElement.style.transition = 'color 0.3s';
+                
+                nameElement.addEventListener('mouseenter', function() {
+                    this.style.color = '#FFA500';
+                });
+                
+                nameElement.addEventListener('mouseleave', function() {
+                    this.style.color = '#FFD700';
+                });
+                
+                nameElement.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const personName = this.getAttribute('data-person-name');
+                    const personType = this.getAttribute('data-person-type');
+                    
+                    const currentModal = document.querySelector('.modal.show');
+                    if (currentModal) {
+                        previousModalId = currentModal.id;
+                    }
+                    
+                    const allModals = document.querySelectorAll('.modal.show');
+                    allModals.forEach(modal => {
+                        const modalInstance = bootstrap.Modal.getInstance(modal);
+                        if (modalInstance) {
+                            modalInstance.hide();
+                        }
+                    });
+                    
+                    setTimeout(() => {
+                        showPersonModal(personName, personType);
+                    }, 300);
+                });
+            });
+        }
+
+        function showPersonModal(personName, personType) {
+            const personData = personTVShowsData[personName];
+            if (!personData) {
+                alert('ไม่พบข้อมูลของ ' + personName);
+                return;
+            }
+            
+            const personModal = new bootstrap.Modal(document.getElementById('personModal'));
+            const modalTitle = document.getElementById('personModalTitle');
+            const moviesContainer = document.getElementById('personMoviesContainer');
+            
+            const titleText = personType === 'director' ? 'ผู้สร้าง: ' : 'นักแสดง: ';
+            modalTitle.textContent = titleText + personName;
+            
+            moviesContainer.innerHTML = '';
+            
+            const movies = personData.movies;
+            for (let i = 0; i < movies.length; i += 3) {
+                const row = document.createElement('div');
+                row.className = 'row g-3 mb-4';
+                
+                for (let j = i; j < Math.min(i + 3, movies.length); j++) {
+                    const movie = movies[j];
+                    const col = document.createElement('div');
+                    col.className = 'col-md-4';
+                    
+                    const movieCard = document.createElement('div');
+                    movieCard.className = 'person-movie-card';
+                    
+                    const img = document.createElement('img');
+                    img.src = movie.poster;
+                    img.alt = movie.name;
+                    img.className = 'person-movie-poster';
+                    img.style.width = '100%';
+                    img.style.height = '450px';
+                    img.style.objectFit = 'cover';
+                    img.style.display = 'block';
+                    img.style.visibility = 'visible';
+                    img.style.opacity = '1';
+                    
+                    const title = document.createElement('div');
+                    title.className = 'person-movie-title';
+                    title.textContent = movie.name;
+                    title.style.color = '#fff';
+                    title.style.visibility = 'visible';
+                    title.style.opacity = '1';
+                    title.style.display = 'flex';
+                    
+                    movieCard.appendChild(img);
+                    movieCard.appendChild(title);
+                    col.appendChild(movieCard);
+                    row.appendChild(col);
+                }
+                
+                moviesContainer.appendChild(row);
+            }
+            
+            // Apply styles to ensure they are applied
+            const modalContent = document.querySelector('#personModal .modal-content');
+            if (modalContent) {
+                modalContent.style.background = 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 25%, #2a2a2a 50%, #1a1a1a 75%, #0f0f0f 100%)';
+                modalContent.style.border = '3px solid #FFD700';
+                modalContent.style.borderRadius = '20px';
+                modalContent.style.color = '#fff';
+            }
+            
+            personModal.show();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setupClickableNames();
+            
+            const moreInfoModalElement = document.getElementById('moreInfoModal');
+            if (moreInfoModalElement) {
+                moreInfoModalElement.addEventListener('shown.bs.modal', function() {
+                    setTimeout(setupClickableNames, 100);
+                });
+            }
+        });
+
+        const backBtn = document.getElementById('backToMovieModal');
+        if (backBtn) {
+            backBtn.addEventListener('click', function() {
+                const personModal = bootstrap.Modal.getInstance(document.getElementById('personModal'));
+                if (personModal) {
+                    personModal.hide();
+                }
+                
+                if (previousModalId) {
+                    setTimeout(() => {
+                        const prevModal = new bootstrap.Modal(document.getElementById(previousModalId));
+                        prevModal.show();
+                    }, 300);
+                }
+            });
+        }
+    </script>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 รีวิวหนัง. สงวนลิขสิทธิ์</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
